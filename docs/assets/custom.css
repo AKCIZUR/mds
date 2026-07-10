@@ -1,0 +1,149 @@
+:root {
+  color-scheme: dark;
+  --md-primary-fg-color: #09090b;
+  --md-primary-fg-color--light: #18181b;
+  --md-primary-fg-color--dark: #000000;
+  --md-default-bg-color: #09090b;
+  --md-default-fg-color: #f4f4f5;
+  --md-default-fg-color--light: #a1a1aa;
+  --md-default-fg-color--lighter: #71717a;
+  --md-code-bg-color: #18181b;
+  --md-code-fg-color: #e4e4e7;
+  --md-accent-fg-color: #f8fafc;
+  --md-typeset-a-color: #60a5fa;
+}
+
+html,
+body {
+  background: #09090b;
+  color: #f4f4f5;
+}
+
+body,
+.md-container,
+.md-main,
+.md-content,
+.md-sidebar,
+.md-nav,
+.md-typeset,
+.md-footer,
+.md-header {
+  background: transparent;
+}
+
+.md-header,
+.md-footer,
+.md-sidebar,
+.md-nav {
+  backdrop-filter: blur(16px);
+}
+
+.md-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset a {
+  color: #93c5fd;
+}
+
+.md-typeset code,
+.md-typeset pre,
+.md-typeset .highlight {
+  border-radius: 14px;
+  background: #111827;
+}
+
+.md-typeset pre {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-typeset table {
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 18px;
+  background: rgba(24, 24, 27, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  color: #fff;
+}
+
+.md-content__inner {
+  max-width: 1080px;
+}
+
+.md-sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-sidebar--secondary {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-search__input {
+  background: #111827;
+  border-radius: 9999px;
+}
+
+.md-search__form,
+.md-search__output {
+  border-radius: 18px;
+}
+
+.md-nav__item .md-nav__link--active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.md-nav__item .md-nav__link:hover {
+  color: #ffffff;
+}
+
+.md-top {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+button,
+input,
+select,
+textarea {
+  color: #f4f4f5;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+/* Hide any appearance toggle if the theme exposes one. */
+[aria-label*="theme"],
+[title*="theme"],
+[class*="theme-toggle"],
+[class*="mode-toggle"] {
+  display: none !important;
+}

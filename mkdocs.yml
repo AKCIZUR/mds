@@ -1,0 +1,56 @@
+site_name: VCCSD Docs
+site_description: Produkční documentation starter pro GitHub Pages.
+site_url: https://USERNAME.github.io/REPO/
+repo_url: https://github.com/USERNAME/REPO
+repo_name: REPO
+edit_uri: edit/main/docs/
+use_directory_urls: true
+
+theme:
+  name: shadcn
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: Obsah stránky
+  - pymdownx.blocks.caption
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+
+plugins:
+  - search
+
+extra_css:
+  - assets/custom.css
+
+nav:
+  - Domů: index.md
+  - Start:
+      - Rychlý start: getting-started.md
+      - Struktura projektu: architecture.md
+  - Menu a layout:
+      - Navigace: navigation.md
+      - Komponenty: components.md
+  - Reference:
+      - Přehled: reference.md
+      - FAQ: faq.md
+      - Release notes: releases.md
+      - Changelog: changelog.md
