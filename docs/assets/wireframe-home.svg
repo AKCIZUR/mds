@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Homepage wireframe">
+  <rect width="1200" height="760" rx="32" fill="#09090b"/>
+  <rect x="28" y="28" width="1144" height="72" rx="20" fill="#111318" stroke="#27272a"/>
+  <rect x="56" y="52" width="160" height="20" rx="10" fill="#f4f4f5"/>
+  <rect x="920" y="52" width="84" height="20" rx="10" fill="#27272a"/>
+  <rect x="1016" y="52" width="84" height="20" rx="10" fill="#27272a"/>
+  <rect x="28" y="124" width="252" height="608" rx="24" fill="#111318" stroke="#27272a"/>
+  <rect x="300" y="124" width="620" height="608" rx="24" fill="#111318" stroke="#27272a"/>
+  <rect x="944" y="124" width="228" height="608" rx="24" fill="#111318" stroke="#27272a"/>
+  <rect x="332" y="162" width="250" height="28" rx="14" fill="#27272a"/>
+  <rect x="332" y="214" width="520" height="18" rx="9" fill="#27272a"/>
+  <rect x="332" y="244" width="500" height="18" rx="9" fill="#27272a"/>
+  <rect x="332" y="274" width="460" height="18" rx="9" fill="#27272a"/>
+  <rect x="332" y="340" width="520" height="210" rx="20" fill="#0f1115" stroke="#27272a"/>
+  <rect x="974" y="162" width="140" height="18" rx="9" fill="#27272a"/>
+  <rect x="974" y="192" width="120" height="18" rx="9" fill="#27272a"/>
+  <rect x="974" y="222" width="132" height="18" rx="9" fill="#27272a"/>
+  <rect x="974" y="252" width="110" height="18" rx="9" fill="#27272a"/>
+</svg>

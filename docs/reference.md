@@ -1,28 +1,29 @@
 # Reference
 
-## Minimum konfigurace
+## Konfigurační minimum
 
 ```yaml
-site_name: VCCSD Docs Dark
+site_name: VCCSD Docs
 theme:
-  name: shadcn
+  name: material
 plugins:
   - search
 ```
 
-## Doporučené rozšíření markdownu
+## Doporučené rozšíření Markdownu
 
-- admonition
-- tables
-- toc
-- pymdownx.highlight
-- pymdownx.superfences
-- pymdownx.tabbed
-- pymdownx.tasklist
+- `admonition`
+- `tables`
+- `toc`
+- `pymdownx.highlight`
+- `pymdownx.superfences`
+- `pymdownx.tabbed`
+- `pymdownx.tasklist`
 
 ## Obsahové zásady
 
 1. začni landing page
 2. přidej onboarding
-3. udržuj menu ploché
-4. code bloky používej pro reálné příklady
+3. rozděl dokumentaci podle témat
+4. přidej FAQ a release notes
+5. drž code blocks konzistentní

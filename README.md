@@ -1,16 +1,16 @@
-# VCCSD Docs Dark
+# VCCSD Docs Dark Prod v5
 
-Produční dokumentační starter pro GitHub Pages postavený na `mkdocs-shadcn` s dark-only shadcn-like vizuálem.
+Produkční dokumentační starter s dark shadcn-like vzhledem, postavený na stabilním MkDocs Material jádru.
 
 ## Co je uvnitř
 
-- minimalistický dark layout
-- levý panel s navigací
-- horní lišta se search a brandingem
-- pravý panel s obsahem stránky
-- syntax highlighting pro kód
-- připravený GitHub Actions deploy
-- obsahové stránky pro design system, code blocks, performance a reference
+- minimalistický dark layout inspirovaný shadcn/ui
+- výrazně lepší code block boxy s vlastním toolbarem
+- CZ / EN jazykový toggle
+- skeleton loading shell
+- jemnější scroll behavior a reveal animace
+- GitHub Pages deploy workflow
+- čistá struktura bez chybějících override cest
 
 ## Spuštění lokálně
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-## Produkční build
+## Build
 
 ```bash
 mkdocs build --strict
@@ -35,8 +35,9 @@ mkdocs build --strict
 
 Workflow `.github/workflows/deploy.yml` publikuje obsah na GitHub Pages z větve `main`.
 
-## Před nasazením uprav
+## Co upravit před nasazením
 
 - `site_url`, `repo_url` a `repo_name` v `mkdocs.yml`
 - logo a favicon v `docs/assets/`
-- vlastní brand texty v `docs/`
+- vlastní texty v `docs/`
+- CZ / EN obsah pro celý web

@@ -1,35 +1,34 @@
-# Layout a navigace
+# Navigace a layout
 
-Layout je navržený jako klasický dokumentační trojúhelník: sidebar, content a TOC.
+Tento základ je připravený pro dokumentaci, kde je důležité:
 
-## Rozvržení
+- levé menu se sekcemi
+- horní lišta s identitou projektu
+- pravý panel s obsahem stránky
+- vyhledávání v obsahu
+- jasná hierarchie článků
+- plynulý scroll mezi anchor odkazy
 
-| Oblast | Úloha |
-| --- | --- |
-| Levý panel | strom dokumentace |
-| Střed | hlavní obsah |
-| Pravý panel | obsah stránky / TOC |
-| Topbar | search, branding, repo |
-
-## Doporučený vzor menu
+## Doporučené členění menu
 
 - Domů
 - Start
-- Design system
-- Layout a navigace
-- Code blocks
-- Komponenty
-- Performance
+- Menu a layout
 - Reference
 - FAQ
 - Release notes
 - Changelog
 
-## Scroll chování
+## Panelové rozvržení
 
-- anchor odkazy mají být jemně smooth
-- na dlouhých stránkách má TOC zůstávat čitelný
-- reduced-motion preference musí zůstat respektovaná
+| Panel | Účel |
+| --- | --- |
+| Levý | strom dokumentace |
+| Horní | identita, search, odkazy |
+| Pravý | TOC / obsah stránky |
+| Střed | samotný článek |
+
+## Poznámka
 
 !!! warning
-    Menu nerozšiřuj jen proto, že to jde. Každý nový bod by měl mít vlastní obsah, jinak dokumentace ztěžkne jako mokrý kabát.
+    Pokud je menu příliš hluboké, dokumentace začne působit těžkopádně. Pro začátek stačí plochá a přehledná struktura.

@@ -1,16 +1,19 @@
 # Release notes
 
-## v1.0.0
+## V5.0.0
 
-- shadcn dark starter
-- čistý layout pro dokumentaci
-- code-friendly typografie
-- přehledná navigace
-- GitHub Pages deploy workflow
-- připravený základ pro další růst
+- shadcn-inspired dark redesign
+- improved code block box with toolbar, copy and wrap actions
+- stronger language toggle shell
+- skeleton loading polish
+- smooth reveal and scroll refinement
+- build-safe MkDocs configuration
 
-## Další krok
+## V4.0.0
 
-- doplnit vlastní produktové stránky
-- přidat API reference nebo FAQ podle projektu
-- přidat další brand assety, pokud jsou potřeba
+- dark release with a Material-based shell
+- code and language experiments
+
+## V3.0.0
+
+- initial complex MkDocs bundle

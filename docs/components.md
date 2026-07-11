@@ -1,27 +1,46 @@
 # Komponenty a bloky
 
-## Doporučené stavební kameny
+Tato stránka ukazuje základní komponenty vizuálního systému.
 
-<div class="cards">
-  <div class="prose-card"><strong>Card</strong><p>Pro feature přehledy, odkazy a krátké anotace.</p></div>
-  <div class="prose-card"><strong>Badge</strong><p>Pro verze, stavy a krátké štítky.</p></div>
-  <div class="prose-card"><strong>Alert</strong><p>Pro bezpečnostní nebo provozní upozornění.</p></div>
-  <div class="prose-card"><strong>Tabs</strong><p>Pro varianty konfigurace a srovnání.</p></div>
-</div>
+## Card
 
-## Doporučené bloky v obsahu
+<section class="feature-card">
+  <h3>Card shell</h3>
+  <p>Jednoduchá karta s jemným borderem, větším paddingem a bez vizuálního balastu.</p>
+</section>
 
-- hero úvodní blok
-- feature cards
-- callout / note / warning
-- tabbed config examples
-- table reference
-- code samples
-
-## Krátká ukázka
+## Alert
 
 !!! note
-    Tohle je připravené jako dokumentační komponenta, ne jako vizuální cirkus.
+    Poznámky držíme krátké a čitelné.
 
-!!! warning
-    Pokud je blok příliš vysoký, rozděl ho. Minimalismus je přítel přehlednosti.
+!!! tip
+    Jedna jasná akce je lepší než tři neurčité.
+
+## Skeleton
+
+<div class="skeleton-card">
+  <div class="skeleton skeleton-line long"></div>
+  <div class="skeleton skeleton-line medium"></div>
+  <div class="skeleton skeleton-line short"></div>
+</div>
+
+## Tabs
+
+=== "Preview"
+    Shadcn-like dark surface, radius 20px a jemná světla pod hranami.
+
+=== "Code"
+    ```css
+    .feature-card {
+      border-radius: 20px;
+    }
+    ```
+
+## Checklist
+
+- [x] dark layout
+- [x] code box design
+- [x] language switch
+- [x] skeleton loading
+- [x] smooth scroll

@@ -1,23 +1,37 @@
-site_name: VCCSD Docs Dark
-site_description: Shadcn-inspired dark documentation starter for GitHub Pages.
+site_name: VCCSD Docs
+site_description: Production documentation starter with a shadcn-inspired dark UI.
 site_url: https://USERNAME.github.io/REPO/
 repo_url: https://github.com/USERNAME/REPO
 repo_name: REPO
 edit_uri: edit/main/docs/
 use_directory_urls: true
 
-site_author: VCCSD
-copyright: Copyright &copy; 2026 VCCSD
-
 theme:
-  name: shadcn
-  show_title: true
-  show_stargazers: false
-  topbar_sections: false
-  show_datetime: false
-  pygments_style:
-    light: shadcn-light
-    dark: github-dark
+  name: material
+  language: cs
+  palette:
+    - scheme: slate
+      primary: slate
+      accent: indigo
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.action.edit
+
+plugins:
+  - search
 
 markdown_extensions:
   - admonition
@@ -29,6 +43,7 @@ markdown_extensions:
   - toc:
       permalink: true
       title: Obsah stránky
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: true
@@ -40,24 +55,22 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.details
-
-plugins:
-  - search
 
 extra_css:
   - assets/custom.css
+
+extra_javascript:
+  - assets/app.js
 
 nav:
   - Domů: index.md
   - Start:
       - Rychlý start: getting-started.md
-      - Design system: design-system.md
-      - Layout a navigace: navigation.md
-  - UI a obsah:
-      - Code blocks: code.md
-      - Komponenty: components.md
-      - Performance: performance.md
+      - Struktura projektu: architecture.md
+  - Komponenty:
+      - Přehled: components.md
+      - Code blocks: code-blocks.md
+      - Language toggle: language-toggle.md
   - Reference:
       - Přehled: reference.md
       - FAQ: faq.md

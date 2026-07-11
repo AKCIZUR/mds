@@ -18,13 +18,13 @@ mkdocs serve
 mkdocs build --strict
 ```
 
-## Co upravit hned
+## Lazy loading strategie
 
-1. `site_url`
-2. `repo_url`
-3. `repo_name`
-4. logo a favicon v `docs/assets/`
-5. vlastní obsah v `docs/`
+- obrázky přes `loading="lazy"`
+- dlouhé sekce přes `IntersectionObserver`
+- skeletony pro rychlejší first impression
+- minimum JS na prvním vykreslení
 
-!!! note
-    Starter je schválně jednoduchý. To je výhoda. Minimalismus bez dír v lodi.
+## Nasazení
+
+Po pushi do `main` se repozitář publikuje přes GitHub Actions.

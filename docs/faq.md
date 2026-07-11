@@ -1,21 +1,21 @@
 # FAQ
 
-## Je to dark-only?
+## Je to light/dark přepínatelné?
 
-Ano. Tahle release je vyladěná na dark vzhled.
+Ne. Tato verze je zamýšlená jako dark-only release.
 
 ## Je to připravené pro GitHub Pages?
 
 Ano. Workflow je součástí repozitáře.
 
-## Můžu to přejmenovat na vlastní brand?
+## Můžu to použít jako základ pro jiné projekty?
 
-Ano. Stačí upravit `site_name`, logo a texty.
+Ano. Stačí přepsat branding, URL a obsah.
 
-## Co upravit jako první?
+## Co upravit hned?
 
-- `site_url`
-- `repo_url`
-- `repo_name`
-- branding v `README.md`
-- úvodní stránku `docs/index.md`
+- `USERNAME`
+- `REPO`
+- logo a favicon
+- úvodní text
+- CZ / EN page set
