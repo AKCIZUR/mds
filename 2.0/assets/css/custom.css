@@ -1,0 +1,165 @@
+:root {
+  --vcc-bg: #090d16;
+  --vcc-surface: rgba(15, 23, 42, 0.72);
+  --vcc-border: rgba(148, 163, 184, 0.16);
+  --vcc-text: #e2e8f0;
+  --vcc-muted: #94a3b8;
+}
+
+html, body {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.10), transparent 24%),
+    var(--vcc-bg);
+}
+
+.md-content__inner {
+  padding-bottom: 4rem;
+}
+
+.md-typeset pre {
+  border: 1px solid var(--vcc-border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.md-typeset code {
+  border-radius: 8px;
+}
+
+.md-typeset .language-python,
+.md-typeset .language-py {
+  border-left: 4px solid #22c55e;
+}
+
+.md-typeset .language-javascript,
+.md-typeset .language-js {
+  border-left: 4px solid #f59e0b;
+}
+
+.md-typeset .language-typescript,
+.md-typeset .language-ts {
+  border-left: 4px solid #38bdf8;
+}
+
+.md-typeset .language-bash,
+.md-typeset .language-shell {
+  border-left: 4px solid #a78bfa;
+}
+
+.vcc-toolbar {
+  position: fixed;
+  top: .8rem;
+  right: .8rem;
+  z-index: 1000;
+  display: flex;
+  gap: .5rem;
+}
+
+.vcc-pill {
+  border: 1px solid var(--vcc-border);
+  background: rgba(15, 23, 42, 0.82);
+  color: var(--vcc-text);
+  border-radius: 999px;
+  padding: .55rem .85rem;
+  font-size: .82rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+}
+
+.vcc-skeleton .md-content {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.vcc-loaded .md-content {
+  opacity: 1;
+  transform: none;
+  transition: opacity .24s ease, transform .24s ease;
+}
+
+.vcc-search-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 9vh;
+  background: rgba(2, 6, 23, 0.72);
+  z-index: 2000;
+}
+
+.vcc-search-modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.vcc-search-card {
+  width: min(860px, calc(100vw - 1.2rem));
+  border: 1px solid var(--vcc-border);
+  border-radius: 24px;
+  background: rgba(2, 6, 23, 0.96);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.vcc-search-card header {
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--vcc-border);
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+
+.vcc-search-card input {
+  flex: 1;
+  background: transparent;
+  color: var(--vcc-text);
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+}
+
+.vcc-results {
+  max-height: min(60vh, 34rem);
+  overflow: auto;
+}
+
+.vcc-result {
+  padding: .9rem 1.1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.08);
+  cursor: pointer;
+}
+
+.vcc-result:hover {
+  background: rgba(34, 211, 238, 0.10);
+}
+
+.vcc-result small {
+  display: block;
+  color: var(--vcc-muted);
+  margin-top: .25rem;
+}
+
+.vcc-card {
+  border: 1px solid var(--vcc-border);
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.55);
+  padding: 1rem;
+}
+
+.vcc-muted {
+  color: var(--vcc-muted);
+}
+
+.vcc-openapi {
+  border: 1px solid var(--vcc-border);
+  border-radius: 22px;
+  min-height: 72vh;
+  overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .vcc-toolbar {
+    top: auto;
+    bottom: .8rem;
+  }
+}
