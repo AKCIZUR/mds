@@ -1,44 +1,34 @@
----
-title: Start
----
+# VCCSD Docs
 
-<div class="shd-hero">
-  <div class="shd-hero__eyebrow">ShadDocs Dark / English</div>
-  <h1>Documentation that feels like a product.</h1>
-  <p>
-    A minimalist dark layout, polished code blocks, and faster orientation for both readers and builders.
-  </p>
-</div>
+A modern documentation starter with a refined dark glass look, language-aware code blocks, a CZ/EN structure, and smoother scrolling.
 
-## What is inside
+## What is ready
 
-<div class="shd-grid">
-  <div class="shd-card">
-    <h3 class="shd-card__title">Code blocks</h3>
-    <div class="shd-card__meta">Toolbar, copy, wrap, collapse, and language labels.</div>
-  </div>
-  <div class="shd-card">
-    <h3 class="shd-card__title">Language toggle</h3>
-    <div class="shd-card__meta">Switch between CZ and EN through the same page structure.</div>
-  </div>
-  <div class="shd-card">
-    <h3 class="shd-card__title">Loading states</h3>
-    <div class="shd-card__meta">Skeleton overlay and lazy loading for better perceived speed.</div>
-  </div>
-  <div class="shd-card">
-    <h3 class="shd-card__title">Override-first</h3>
-    <div class="shd-card__meta">Maintain the UI through `overrides/` without breaking builds.</div>
-  </div>
-</div>
+- clear navigation on the left
+- softer dark theme with more depth
+- minimal code blocks with language accents
+- page skeleton on load
+- lazy loading for images and embeds
+- CZ/EN switching with matching structure
 
-## Syntax sample
+## Design direction
+
+!!! note
+    The goal is a clean, product-like experience with strong hierarchy and excellent readability.
+
+## Example
 
 ```ts
-export function greet(name: string): string {
-  return `Hello, ${name}`
+const theme = {
+  mode: 'dark',
+  accent: 'cyan',
+  motion: 'soft',
 }
 ```
 
-```bash
-mkdocs build --strict
-```
+## Next steps
+
+- add your brand
+- expand sections for your product
+- prepare real API reference
+- keep content short and precise

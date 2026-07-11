@@ -1,58 +1,34 @@
----
-title: ShadDocs Dark
----
+# VCCSD Docs
 
-<div class="shd-hero">
-  <div class="shd-hero__eyebrow">Dark shadcn-inspired docs system</div>
-  <h1>Build documentation that looks intentional.</h1>
-  <p>
-    A clean MkDocs foundation with a dark shadcn-like visual layer, stronger code blocks,
-    bilingual routing, skeleton loading, and smooth navigation.
-  </p>
+Moderní dokumentační základ s jemným glass efektem, výrazným code blokem, CZ/EN strukturou a plynulým scrollováním.
 
-  <div class="shd-pillbar">
-    <span class="shd-pill">Override-first structure</span>
-    <span class="shd-pill">Copy / Wrap / Collapse code boxes</span>
-    <span class="shd-pill">CZ + EN content</span>
-    <span class="shd-pill">GitHub Pages ready</span>
-  </div>
-</div>
+## Co je připraveno
 
-## What this repo gives you
+- přehledná navigace vlevo
+- jemnější dark theme s větší hloubkou vrstev
+- minimalistické code bloky s barvením podle jazyka
+- skeleton vrstva při načítání
+- lazy loading obrázků a embedů
+- CZ/EN přepínání s odpovídající strukturou
 
-<div class="shd-grid">
-  <a class="shd-card" href="cs/">
-    <h3 class="shd-card__title">Česky</h3>
-    <div class="shd-card__meta">Start here if your audience is Czech.</div>
-  </a>
-  <a class="shd-card" href="en/">
-    <h3 class="shd-card__title">English</h3>
-    <div class="shd-card__meta">Start here if your audience is international.</div>
-  </a>
-  <a class="shd-card" href="code-blocks/">
-    <h3 class="shd-card__title">Code block system</h3>
-    <div class="shd-card__meta">A polished box UI for snippets and examples.</div>
-  </a>
-  <a class="shd-card" href="loading/">
-    <h3 class="shd-card__title">Loading states</h3>
-    <div class="shd-card__meta">Skeletons, lazy assets, and smoother perceived speed.</div>
-  </a>
-</div>
+## Design směr
 
-## Quick highlights
+!!! note
+    Cíl je čistý, „produktový“ vzhled bez přeplácání. Důraz je na čitelnost, hierarchii a kvalitní code snippety.
 
-| Area | Result |
-| --- | --- |
-| Visual style | Dark, minimal, shadcn-inspired |
-| Code blocks | Header bar, label, copy, wrap, collapse |
-| Language toggle | CZ / EN route switch |
-| Loading | Skeleton overlay + lazy images |
-| Scroll | Smooth anchors with restrained motion |
-
-## Sample code block
+## Ukázka
 
 ```ts
-export function cn(...parts: Array<string | false | undefined>) {
-  return parts.filter(Boolean).join(" ")
+const theme = {
+  mode: 'dark',
+  accent: 'cyan',
+  motion: 'soft',
 }
 ```
+
+## Co dál
+
+- doplnit vlastní značku
+- rozšířit sekce podle produktu
+- připravit reálné API reference
+- držet obsah krátký a přesný
