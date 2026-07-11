@@ -1,7 +1,0 @@
-# Verze dokumentace
-
-- [v3.0](v3.0/)
-- [v2.0](v2.0/)
-- [v1.0](v1.0/)
-
-Verzování udržuje starší obsah oddělený od aktuální dokumentace.
