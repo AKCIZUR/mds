@@ -13,10 +13,6 @@
 │   ├── faq.md
 │   ├── releases.md
 │   ├── changelog.md
-│   ├── en/
-│   │   ├── index.md
-│   │   ├── getting-started.md
-│   │   └── ...
 │   └── assets/
 │       ├── custom.css
 │       ├── app.js
@@ -29,11 +25,10 @@
 
 ## Smysl rozdělení
 
-- `index.md`: landing page
+- `index.md`: vstupní landing page
 - `getting-started.md`: instalace a první kroky
-- `navigation.md`: menu a layout
-- `components.md`: bloky, callouty, code blocks
+- `navigation.md`: menu a panelové rozvržení
+- `components.md`: vzorové bloky obsahu
 - `reference.md`: technický přehled
-- `faq.md`: krátké odpovědi
-- `releases.md` a `changelog.md`: historie změn
-- `en/`: anglická varianta se stejnou strukturou
+- `faq.md`: rychlé odpovědi
+- `releases.md` a `changelog.md`: release proces

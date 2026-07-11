@@ -2,7 +2,7 @@
 
 ## Je to light/dark přepínatelné?
 
-Základ je stále dark-first. Přidaná vrstva ale dělá vzhled jemnější, čistší a více „app-like“.
+Ne. Tato verze je vynuceně dark-only.
 
 ## Je to připravené pro GitHub Pages?
 
@@ -18,4 +18,5 @@ Ano. Stačí přepsat branding, URL a obsah.
 - `REPO`
 - logo
 - favicon
-- český a anglický obsah
+- úvodní text
+- CZ / EN page set

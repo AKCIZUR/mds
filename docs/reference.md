@@ -8,10 +8,6 @@ theme:
   name: shadcn
 plugins:
   - search
-extra_css:
-  - assets/custom.css
-extra_javascript:
-  - assets/app.js
 ```
 
 ## Doporučené rozšíření
@@ -29,4 +25,5 @@ extra_javascript:
 1. začni landing page
 2. přidej onboarding
 3. rozděl dokumentaci podle témat
-4. přidej FAQ, release notes a changelog
+4. přidej FAQ a release notes
+5. drž kódové bloky vizuálně konzistentní

@@ -4,9 +4,34 @@
 
 ### Dokumentace, která působí hotově
 
-Krátké texty, jasná hierarchie a dost prostoru kolem bloků.
+Text lze použít na úvodní stránku, release notes i interní portál.
 
-## Doporučené UI bloky
+## Code block component prototype
+
+```ts
+export function greet(name: string) {
+  return `Hello, ${name}`
+}
+```
+
+Po načtení stránky se blok automaticky obalí do toolbar shellu s jazykovým štítkem a copy akcí.
+
+## Language toggle example
+
+<div class="markup-hero__actions">
+  <a class="primary" href="#cs">CZ</a>
+  <a href="#en">EN</a>
+</div>
+
+<div data-lang="cs" id="cs">
+  <p><strong>Čeština</strong> je výchozí pro lokální obsah a onboarding.</p>
+</div>
+
+<div data-lang="en" id="en">
+  <p><strong>English</strong> is available for global teams and shared docs.</p>
+</div>
+
+## Feature cards
 
 | Blok | Využití |
 | --- | --- |
@@ -17,31 +42,23 @@ Krátké texty, jasná hierarchie a dost prostoru kolem bloků.
 | Accordion | FAQ |
 | Timeline | release historie |
 
-## Code block
+## Callouty
 
-```python
-def theme(accent: str) -> str:
-    return f"minimal-{accent}"
-```
+!!! note
+    Poznámky pro čtenáře.
 
-```bash
-mkdocs build --strict
-```
+!!! tip
+    Krátké doporučení.
 
-## Tabs
-
-=== "Config"
-
-    `mkdocs.yml`
-
-=== "Content"
-
-    markdown soubory v `docs/`
+!!! warning
+    Rizikové kroky nebo omezení.
 
 ## Checklist
 
-- [x] dark-only základ
-- [x] CZ/EN struktura
-- [x] code highlights
-- [x] skeleton loading
-- [x] plynulejší scroll
+- [x] dark-only styl
+- [x] menu
+- [x] toc panel
+- [x] deploy workflow
+- [x] code block vylepšení
+- [x] jazykový toggle
+- [x] skeleton loading vzor
