@@ -1,33 +1,16 @@
 # VCCSD Docs Pro
 
-Produkční dokumentace s vyhledáváním, verzemi, blogem, API referencí a dvěma jazyky.
+Produkční dokumentace s moderním layoutem a rychlým dohledáváním obsahu.
 
-## Co je připravené
+## Stav
 
-- fulltextové vyhledávání
-- CZ / EN struktura
-- automatické menu
-- editace přes GitHub
-- command palette `Ctrl+K`
-- lazy loading
-- skeleton loading
-- blog
-- versioned docs
-- Mermaid
-- OpenAPI
+- search ready
+- i18n ready
+- nav auto-generated
+- blog ready
+- versions ready
+- openapi ready
 
-## Rychlý vstup
+## Hlavní princip
 
-```bash
-mkdocs serve
-```
-
-## Ukázka Mermaid
-
-```mermaid
-graph TD
-  A[Docs] --> B[Search]
-  A --> C[Blog]
-  A --> D[API]
-  A --> E[Versions]
-```
+Obsah se píše do Markdownu, menu se generuje ze struktury souborů a klientská vrstva přidává rychlé akce nad stránkami.

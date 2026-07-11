@@ -1,8 +1,8 @@
 # Design update
 
-Základ je postavený na dark-first vizuálu s výraznějšími code blocky a pohodlnější čitelností.
+Design je postavený na tmavém povrchu, jemných kartách a výrazněji oddělených code blocích.
 
 ```python
-def hello():
-    return "world"
+def theme():
+    return "slate"
 ```

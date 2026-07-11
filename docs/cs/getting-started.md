@@ -4,7 +4,7 @@
 
 ```bash
 pip install -r requirements.txt
-python scripts/generate_indexes.py
+python scripts/generate_assets.py
 mkdocs serve
 ```
 
@@ -14,11 +14,9 @@ mkdocs serve
 - `repo_url`
 - `USERNAME`
 - `REPO`
-- logo a favicon
+- logo
+- favicon
 
-## Doporučený build
+## Deploy
 
-```bash
-python scripts/generate_indexes.py
-mkdocs build --strict
-```
+Build se dá napojit na GitHub Actions a publikovat na GitHub Pages.

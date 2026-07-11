@@ -1,23 +1,17 @@
 site_name: VCCSD Docs Pro
-site_description: Production-ready docs starter with search, i18n, versioning and blog.
+site_description: Production docs starter with search, i18n, versions, blog and API reference.
 site_url: https://USERNAME.github.io/REPO/
 repo_url: https://github.com/USERNAME/REPO
 repo_name: REPO
 edit_uri: edit/main/docs/
 use_directory_urls: true
+copyright: Copyright &copy; 2026
 
 theme:
   name: material
   language: cs
   logo: assets/images/logo.svg
   favicon: assets/images/favicon.svg
-  palette:
-    - scheme: slate
-      primary: slate
-      accent: cyan
-      toggle:
-        icon: material/weather-night
-        name: Dark mode
   features:
     - navigation.tabs
     - navigation.sections
@@ -25,12 +19,25 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.instant.prefetch
+    - navigation.tracking
     - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.action.edit
     - content.tabs.link
+    - announce.dismiss
+  palette:
+    - scheme: slate
+      primary: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+plugins:
+  - search
+  - awesome-pages
 
 markdown_extensions:
   - admonition
@@ -57,29 +64,6 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.critic
-
-plugins:
-  - search
-
-nav:
-  - Domů: cs/index.md
-  - Docs:
-      - Start: cs/getting-started.md
-      - Funkce: cs/features/index.md
-      - Blog: cs/blog/index.md
-      - API: cs/api/index.md
-      - Verze: versions/index.md
-  - EN:
-      - Home: en/index.md
-      - Start: en/getting-started.md
-      - Features: en/features/index.md
-      - Blog: en/blog/index.md
-      - API: en/api/index.md
-      - Versions: en/versions/index.md
-
-extra:
-  generator: false
 
 extra_css:
   - assets/css/custom.css
@@ -89,3 +73,6 @@ extra_javascript:
   - assets/js/app.js
   - assets/js/openapi.js
   - assets/js/mermaid-lite.js
+
+extra:
+  generator: false

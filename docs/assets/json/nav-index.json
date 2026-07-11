@@ -1,0 +1,36 @@
+{
+  "languages": [
+    {
+      "code": "cs",
+      "label": "CZ",
+      "path": "/cs/"
+    },
+    {
+      "code": "en",
+      "label": "EN",
+      "path": "/en/"
+    }
+  ],
+  "main": [
+    {
+      "title": "Docs",
+      "path": "/cs/"
+    },
+    {
+      "title": "Blog",
+      "path": "/cs/blog/"
+    },
+    {
+      "title": "API",
+      "path": "/cs/api/"
+    },
+    {
+      "title": "Versions",
+      "path": "/cs/versions/"
+    },
+    {
+      "title": "Changelog",
+      "path": "/changelog/"
+    }
+  ]
+}

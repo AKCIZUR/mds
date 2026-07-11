@@ -1,15 +1,39 @@
 [
   {
-    "title": "API dokumentace",
-    "summary": "<div data-openapi-src=\"../../assets/api/openapi.yaml\"></div>",
+    "title": "Changelog",
+    "summary": "## v3.0",
+    "href": "/changelog/",
+    "tags": [
+      "changelog"
+    ]
+  },
+  {
+    "title": "API",
+    "summary": "API sekce je připravená na samostatnou specifikaci.",
     "href": "/cs/api/index/",
     "tags": [
       "index"
     ]
   },
   {
+    "title": "OpenAPI",
+    "summary": "Ukázka specifikace.",
+    "href": "/cs/api/openapi/",
+    "tags": [
+      "openapi"
+    ]
+  },
+  {
+    "title": "Architektura",
+    "summary": "## Vrstva obsahu",
+    "href": "/cs/architecture/",
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
     "title": "Design update",
-    "summary": "Základ je postavený na dark-first vizuálu s výraznějšími code blocky a pohodlnější čitelností.",
+    "summary": "Design je postavený na tmavém povrchu, jemných kartách a výrazněji oddělených code blocích.",
     "href": "/cs/blog/design-update/",
     "tags": [
       "design",
@@ -18,15 +42,15 @@
   },
   {
     "title": "Blog",
-    "summary": "Blog je připravený jako další obsahový kanál vedle dokumentace.",
+    "summary": "Blog slouží pro release notes, design updates a roadmapu.",
     "href": "/cs/blog/index/",
     "tags": [
       "index"
     ]
   },
   {
-    "title": "Release launch",
-    "summary": "Napojit skutečný release proces na GitHub Actions a changelog.",
+    "title": "Launch release",
+    "summary": "Tahle verze přináší kompletnější release základ.",
     "href": "/cs/blog/release-launch/",
     "tags": [
       "release",
@@ -34,16 +58,56 @@
     ]
   },
   {
+    "title": "Roadmap",
+    "summary": "## Další logické kroky",
+    "href": "/cs/blog/roadmap/",
+    "tags": [
+      "roadmap"
+    ]
+  },
+  {
+    "title": "Jazyky",
+    "summary": "CZ a EN verze běží paralelně ve stejné struktuře. Přepínač jazyka se přizpůsobuje aktuální stránce.",
+    "href": "/cs/features/i18n/",
+    "tags": [
+      "i18n"
+    ]
+  },
+  {
     "title": "Funkce",
-    "summary": "Tato release verze je postavená tak, aby šla hned dál rozšiřovat bez přepisování architektury.",
+    "summary": "Katalog všech implementovaných funkcí.",
     "href": "/cs/features/index/",
     "tags": [
       "index"
     ]
   },
   {
+    "title": "Command palette",
+    "summary": "Paleta umí:",
+    "href": "/cs/features/palette/",
+    "tags": [
+      "palette"
+    ]
+  },
+  {
+    "title": "Výkon",
+    "summary": "Dokumentace",
+    "href": "/cs/features/performance/",
+    "tags": [
+      "performance"
+    ]
+  },
+  {
+    "title": "Vyhledávání",
+    "summary": "Fulltextové vyhledávání běží nad generovaným JSON indexem, který obsahuje titulky, shrnutí, tagy a cesty stránek.",
+    "href": "/cs/features/search/",
+    "tags": [
+      "search"
+    ]
+  },
+  {
     "title": "Rychlý start",
-    "summary": "pip install -r requirements.txt python scripts/generate_indexes.py mkdocs serve",
+    "summary": "## Instalace",
     "href": "/cs/getting-started/",
     "tags": [
       "getting",
@@ -52,15 +116,23 @@
   },
   {
     "title": "VCCSD Docs Pro",
-    "summary": "Produkční dokumentace s vyhledáváním, verzemi, blogem, API referencí a dvěma jazyky.",
+    "summary": "Produkční dokumentace s moderním layoutem a rychlým dohledáváním obsahu.",
     "href": "/cs/index/",
     "tags": [
       "index"
     ]
   },
   {
+    "title": "Navigace",
+    "summary": "## Automatické menu",
+    "href": "/cs/navigation/",
+    "tags": [
+      "navigation"
+    ]
+  },
+  {
     "title": "Verze dokumentace",
-    "summary": "Verzování umožňuje držet starší dokumentaci odděleně od aktuálního vydání.",
+    "summary": "Verzování udržuje starší obsah oddělený od aktuální dokumentace.",
     "href": "/cs/versions/index/",
     "tags": [
       "index"
@@ -68,7 +140,7 @@
   },
   {
     "title": "v1.0",
-    "summary": "Původní starter verze byla menší a sloužila jako výchozí základ.",
+    "summary": "Původní verze byla malý základ bez plného navigačního a akčního systému.",
     "href": "/cs/versions/v1.0/index/",
     "tags": [
       "index"
@@ -76,23 +148,47 @@
   },
   {
     "title": "v2.0",
-    "summary": "Aktuální release obsahuje plný production setup a rozšířený vizuální základ.",
+    "summary": "Předchozí release byl jednodušší a sloužil jako starter pro první nasazení.",
     "href": "/cs/versions/v2.0/index/",
     "tags": [
       "index"
     ]
   },
   {
-    "title": "API documentation",
-    "summary": "<div data-openapi-src=\"../../assets/api/openapi.yaml\"></div>",
+    "title": "v3.0",
+    "summary": "Aktuální release.",
+    "href": "/cs/versions/v3.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "API",
+    "summary": "The API section is ready for a dedicated spec.",
     "href": "/en/api/index/",
     "tags": [
       "index"
     ]
   },
   {
+    "title": "OpenAPI",
+    "summary": "Sample spec.",
+    "href": "/en/api/openapi/",
+    "tags": [
+      "openapi"
+    ]
+  },
+  {
+    "title": "Architecture",
+    "summary": "## Content layer",
+    "href": "/en/architecture/",
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
     "title": "Design update",
-    "summary": "The base uses a dark-first visual system with stronger code blocks and cleaner readability.",
+    "summary": "The design uses a dark surface, soft cards and stronger code block separation.",
     "href": "/en/blog/design-update/",
     "tags": [
       "design",
@@ -101,15 +197,15 @@
   },
   {
     "title": "Blog",
-    "summary": "Dokumentace",
+    "summary": "Blog space for release notes, design updates and roadmap items.",
     "href": "/en/blog/index/",
     "tags": [
       "index"
     ]
   },
   {
-    "title": "Release launch",
-    "summary": "Dokumentace",
+    "title": "Launch release",
+    "summary": "This version adds a much more complete release base.",
     "href": "/en/blog/release-launch/",
     "tags": [
       "release",
@@ -117,16 +213,56 @@
     ]
   },
   {
+    "title": "Roadmap",
+    "summary": "## Next steps",
+    "href": "/en/blog/roadmap/",
+    "tags": [
+      "roadmap"
+    ]
+  },
+  {
+    "title": "Languages",
+    "summary": "CZ and EN versions run side by side in the same structure. The language switcher adapts to the current page.",
+    "href": "/en/features/i18n/",
+    "tags": [
+      "i18n"
+    ]
+  },
+  {
     "title": "Features",
-    "summary": "Dokumentace",
+    "summary": "Feature catalogue.",
     "href": "/en/features/index/",
     "tags": [
       "index"
     ]
   },
   {
+    "title": "Command palette",
+    "summary": "The palette can:",
+    "href": "/en/features/palette/",
+    "tags": [
+      "palette"
+    ]
+  },
+  {
+    "title": "Performance",
+    "summary": "Dokumentace",
+    "href": "/en/features/performance/",
+    "tags": [
+      "performance"
+    ]
+  },
+  {
+    "title": "Search",
+    "summary": "Full-text search runs on a generated JSON index with titles, summaries, tags and page paths.",
+    "href": "/en/features/search/",
+    "tags": [
+      "search"
+    ]
+  },
+  {
     "title": "Getting started",
-    "summary": "pip install -r requirements.txt python scripts/generate_indexes.py mkdocs serve",
+    "summary": "## Install",
     "href": "/en/getting-started/",
     "tags": [
       "getting",
@@ -135,23 +271,23 @@
   },
   {
     "title": "VCCSD Docs Pro",
-    "summary": "Production documentation site with search, versions, blog, API reference and two languages.",
+    "summary": "Production documentation with a modern layout and fast content discovery.",
     "href": "/en/index/",
     "tags": [
       "index"
     ]
   },
   {
-    "title": "Release notes",
-    "summary": "This repository is prepared as a base for a real release flow:",
-    "href": "/en/notes/",
+    "title": "Navigation",
+    "summary": "## Automatic menu",
+    "href": "/en/navigation/",
     "tags": [
-      "notes"
+      "navigation"
     ]
   },
   {
     "title": "Documentation versions",
-    "summary": "Dokumentace",
+    "summary": "Versioning keeps older documentation separate from the current release.",
     "href": "/en/versions/index/",
     "tags": [
       "index"
@@ -159,7 +295,7 @@
   },
   {
     "title": "v1.0",
-    "summary": "The original starter was smaller and served as the base layer.",
+    "summary": "The original version was a small base without the full navigation and action layer.",
     "href": "/en/versions/v1.0/index/",
     "tags": [
       "index"
@@ -167,18 +303,26 @@
   },
   {
     "title": "v2.0",
-    "summary": "This release includes the full production setup and expanded visual base.",
+    "summary": "The previous release was simpler and served as the starter foundation.",
     "href": "/en/versions/v2.0/index/",
     "tags": [
       "index"
     ]
   },
   {
-    "title": "Poznámky k release",
-    "summary": "Tento repozitář je připravený jako base pro skutečný release flow:",
-    "href": "/notes/",
+    "title": "v3.0",
+    "summary": "Current release.",
+    "href": "/en/versions/v3.0/index/",
     "tags": [
-      "notes"
+      "index"
+    ]
+  },
+  {
+    "title": "VCCSD Docs Pro",
+    "summary": "Tento repozitář je připravený jako kompletní základ pro produkční dokumentaci.",
+    "href": "/index/",
+    "tags": [
+      "index"
     ]
   }
 ]

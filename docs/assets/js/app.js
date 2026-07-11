@@ -1,25 +1,51 @@
 (() => {
   const APP_BASE = new URL('.', document.currentScript?.src || window.location.href);
-  const state = { items: [], active: 0 };
+  const state = { items: [], versions: [], active: 0 };
 
-  const escape = (s) => s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const esc = (s) => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
-  const loadIndex = async () => {
-    const res = await fetch(new URL('../json/search-index.json', APP_BASE), { cache: 'no-store' });
-    state.items = await res.json();
+  const currentPath = () => window.location.pathname.replace(/index\.html?$/, '');
+
+  const langLinks = () => {
+    const path = currentPath();
+    const isCS = /\/cs\//.test(path);
+    const isEN = /\/en\//.test(path);
+    const cs = isEN ? path.replace('/en/', '/cs/') : (isCS ? path : '/cs/');
+    const en = isCS ? path.replace('/cs/', '/en/') : (isEN ? path : '/en/');
+    return { cs, en };
   };
 
   const createToolbar = () => {
     const toolbar = document.createElement('div');
     toolbar.className = 'vcc-toolbar';
-    const path = window.location.pathname;
-    const switchLang = (from, to) => path.includes(`/${from}/`) ? path.replace(`/${from}/`, `/${to}/`) : `/${to}/index/`;
+    const { cs, en } = langLinks();
     toolbar.innerHTML = `
-      <a class="vcc-pill" href="${switchLang('en', 'cs')}">CZ</a>
-      <a class="vcc-pill" href="${switchLang('cs', 'en')}">EN</a>
+      <a class="vcc-pill" href="${esc(cs)}">CZ</a>
+      <a class="vcc-pill" href="${esc(en)}">EN</a>
+      <select class="vcc-version-select" aria-label="Version"></select>
+      <button class="vcc-theme-trigger" type="button" aria-label="Toggle theme">Theme</button>
       <button class="vcc-palette-trigger" type="button" aria-label="Open command palette">Ctrl+K</button>
     `;
     document.body.appendChild(toolbar);
+
+    const select = toolbar.querySelector('.vcc-version-select');
+    state.versions.forEach(v => {
+      const opt = document.createElement('option');
+      opt.value = v.path;
+      opt.textContent = v.label;
+      select.appendChild(opt);
+    });
+    select.addEventListener('change', () => {
+      window.location.href = select.value;
+    });
+
+    toolbar.querySelector('.vcc-theme-trigger').addEventListener('click', () => {
+      const doc = document.documentElement;
+      const dark = doc.getAttribute('data-md-color-scheme') === 'slate';
+      doc.setAttribute('data-md-color-scheme', dark ? 'default' : 'slate');
+      localStorage.setItem('vcc-theme', dark ? 'default' : 'slate');
+    });
+
     toolbar.querySelector('.vcc-palette-trigger').addEventListener('click', openPalette);
   };
 
@@ -37,21 +63,26 @@
         <div class="vcc-results" id="vcc-results"></div>
       </div>`;
     document.body.appendChild(modal);
+
     const input = modal.querySelector('#vcc-search-input');
     const results = modal.querySelector('#vcc-results');
 
     const render = () => {
       const q = input.value.trim().toLowerCase();
-      const filtered = !q ? state.items.slice(0, 12) : state.items.filter(item =>
-        item.title.toLowerCase().includes(q) ||
-        item.summary.toLowerCase().includes(q) ||
-        item.tags.join(' ').toLowerCase().includes(q)
-      ).slice(0, 12);
+      const filtered = !q
+        ? state.items.slice(0, 12)
+        : state.items.filter(item =>
+            item.title.toLowerCase().includes(q) ||
+            item.summary.toLowerCase().includes(q) ||
+            item.tags.join(' ').toLowerCase().includes(q)
+          ).slice(0, 12);
+
       results.innerHTML = filtered.map((item, i) => `
-        <div class="vcc-result ${i === state.active ? 'is-active' : ''}" data-href="${escape(item.href)}">
-          <strong>${escape(item.title)}</strong>
-          <small>${escape(item.summary)}</small>
+        <div class="vcc-result ${i === state.active ? 'is-active' : ''}" data-href="${esc(item.href)}">
+          <strong>${esc(item.title)}</strong>
+          <small>${esc(item.summary)}</small>
         </div>`).join('') || '<div class="vcc-result">Nic nenalezeno.</div>';
+
       results.querySelectorAll('.vcc-result[data-href]').forEach(el => {
         el.addEventListener('click', () => location.href = el.dataset.href);
       });
@@ -88,6 +119,15 @@
     document.body.style.overflow = '';
   };
 
+  const loadIndexes = async () => {
+    const [items, versions] = await Promise.all([
+      fetch(new URL('../json/search-index.json', APP_BASE), { cache: 'no-store' }).then(r => r.json()),
+      fetch(new URL('../json/versions.json', APP_BASE), { cache: 'no-store' }).then(r => r.json()).catch(() => [])
+    ]);
+    state.items = items;
+    state.versions = versions;
+  };
+
   const setupLazyLoading = () => {
     document.querySelectorAll('img:not([loading])').forEach(img => img.loading = 'lazy');
     document.querySelectorAll('iframe:not([loading])').forEach(frame => frame.loading = 'lazy');
@@ -95,10 +135,15 @@
 
   const setupSkeleton = () => {
     document.documentElement.classList.add('vcc-skeleton');
-    window.requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
       document.documentElement.classList.remove('vcc-skeleton');
       document.documentElement.classList.add('vcc-loaded');
     });
+  };
+
+  const setupTheme = () => {
+    const saved = localStorage.getItem('vcc-theme');
+    if (saved) document.documentElement.setAttribute('data-md-color-scheme', saved);
   };
 
   const setupKeyboard = () => {
@@ -111,24 +156,23 @@
     });
   };
 
-  const setupMeta = () => {
-    const meta = window.VCC_META || {};
-    const links = document.querySelectorAll('a[href]');
-    links.forEach(a => {
-      if (a.getAttribute('href')?.startsWith('/cs/') || a.getAttribute('href')?.startsWith('/en/')) {
-        a.dataset.local = 'true';
-      }
-    });
+  const setEditLink = () => {
+    const base = (window.VCC_META && VCC_META.editBase) || '';
+    const edit = document.querySelector('.md-content a[href*="edit/main"]');
+    if (edit && base) {
+      // keep native Material button, no-op placeholder for optional future routing
+    }
   };
 
   const bootstrap = async () => {
     setupSkeleton();
+    setupTheme();
+    await loadIndexes();
     createToolbar();
     createPalette();
     setupKeyboard();
     setupLazyLoading();
-    setupMeta();
-    await loadIndex();
+    setEditLink();
     window.vccRenderMermaid?.();
     window.vccRenderOpenAPI?.();
     const observer = new MutationObserver(() => {

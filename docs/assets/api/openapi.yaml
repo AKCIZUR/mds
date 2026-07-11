@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
   title: VCCSD Docs API
-  version: 2.0.0
-  description: Sample OpenAPI specification for the docs release repo.
+  version: 3.0.0
+  description: Sample OpenAPI spec for the production docs starter.
 servers:
   - url: https://api.example.com
 paths:
@@ -14,7 +14,7 @@ paths:
           description: OK
   /posts:
     get:
-      summary: List blog posts
+      summary: List posts
       responses:
         "200":
           description: OK

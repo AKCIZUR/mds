@@ -1,14 +1,9 @@
-# Release launch
+# Launch release
 
-### Co je v této verzi
+Tahle verze přináší kompletnější release základ.
 
-- produkční layout
-- vyhledávání
-- palette
-- i18n
-- API page
-- version selector
-
-### Další krok
-
-Napojit skutečný release proces na GitHub Actions a changelog.
+- menu z `.pages`
+- indexované vyhledávání
+- command palette
+- versions section
+- API section
