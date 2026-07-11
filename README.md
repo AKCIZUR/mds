@@ -1,21 +1,21 @@
-# Coherent MkDocs Pro Release
+# MkDocs MaterialX Pro
 
-Produkční dokumentační starter pro GitHub Pages.
+Coherent production starter pro dokumentaci na bázi Material for MkDocs a vlastního dark-first MaterialX stylu.
 
 ## Co obsahuje
 
-- dark-first vizuál inspirovaný shadcn estetikou
-- CZ / EN obsah
+- CZ / EN dokumentaci
+- automatické indexy z Markdownu
 - fulltext search
 - command palette `Ctrl+K`
-- automatický index Markdown souborů
 - blog
-- verzování dokumentace
+- verze přes `mike`
 - Mermaid diagramy
 - OpenAPI stránku
 - edit odkazy na GitHub
-- lazy loading a skeleton loading přes JS/CSS
-- build skripty a GitHub Actions deploy
+- lazy loading
+- skeleton loading
+- dark UI s MaterialX override vrstvou
 
 ## Spuštění
 
@@ -38,20 +38,9 @@ python scripts/generate_indexes.py
 mkdocs build --strict
 ```
 
-## Nasazení verzí
-
-Verze dokumentace je připravená pro `mike`:
+## Release
 
 ```bash
 mike deploy --push --update-aliases 2.0 latest
 mike set-default --push latest
 ```
-
-## Struktura
-
-- `docs/cs/` a `docs/en/` pro jazykové mutace
-- `docs/blog/` pro články
-- `docs/api/` pro OpenAPI
-- `docs/versions/` pro verzované stránky
-- `docs/assets/js/app.js` pro palette a language switch
-- `scripts/generate_indexes.py` pro indexy a menu data

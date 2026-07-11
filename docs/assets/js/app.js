@@ -6,7 +6,7 @@
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[m]));
 
-  const currentLang = () => {
+  const currentPathLang = () => {
     const path = window.location.pathname;
     if (path.includes('/en/')) return 'en';
     if (path.includes('/cs/')) return 'cs';
@@ -42,6 +42,7 @@
 
   const ensurePalette = () => {
     if (window.__vccPalette) return window.__vccPalette;
+
     const modal = document.createElement('div');
     modal.className = 'vcc-search-modal';
     modal.setAttribute('aria-hidden', 'true');

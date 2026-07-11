@@ -42,9 +42,8 @@ for md in sorted(DOCS.rglob("*.md")):
     if rel.startswith("assets/"):
         continue
     text = md.read_text(encoding="utf-8")
-    title = heading_title(text)
     items.append({
-        "title": title,
+        "title": heading_title(text),
         "summary": first_paragraph(text),
         "href": "/" + rel.replace(".md", "/"),
         "tags": [p for p in re.split(r"[\/_.-]+", md.stem) if p],

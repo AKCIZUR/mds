@@ -1,18 +1,19 @@
-# Coherent MkDocs Pro
+# MkDocs MaterialX Pro
 
-Produkční starter pro technickou dokumentaci.
+Production starter pro moderní dokumentaci.
 
-## Hlavní části
+## Co je uvnitř
 
-- česká a anglická mutace
-- fulltextové vyhledávání
+- CZ / EN
+- search
 - command palette
 - blog
-- verzování
-- Mermaid diagramy
-- OpenAPI sekce
-- edit odkazy
-- dark-first vzhled
+- versioning
+- Mermaid
+- OpenAPI
+- edit links
+- dark-first styling
+- generated indexy
 
 ## Rychlý start
 
@@ -21,14 +22,12 @@ python scripts/generate_indexes.py
 mkdocs serve
 ```
 
-## Architektura
+## Diagram
 
 ```mermaid
 graph TD
-  A[Docs] --> B[CS]
-  A --> C[EN]
-  A --> D[Blog]
+  A[Docs] --> B[Search]
+  A --> C[Blog]
+  A --> D[Versions]
   A --> E[API]
-  A --> F[Versions]
-  A --> G[Search]
 ```
