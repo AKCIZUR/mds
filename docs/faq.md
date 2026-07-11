@@ -1,17 +1,21 @@
 # FAQ
 
-### Is this production-ready?
+## Je to dark-only?
 
-It is structured like a production starter, but you should still run `mkdocs build --strict` in your own environment and verify the final content.
+Ano. Tahle release je vyladěná na dark vzhled.
 
-### Is the shadcn style real shadcn/ui?
+## Je to připravené pro GitHub Pages?
 
-It is a shadcn-inspired visual layer applied to MkDocs Material, not a React component library.
+Ano. Workflow je součástí repozitáře.
 
-### Can I split CZ and EN into separate folders?
+## Můžu to přejmenovat na vlastní brand?
 
-Yes. This starter keeps both languages in one shell for simplicity, but the structure can be split later.
+Ano. Stačí upravit `site_name`, logo a texty.
 
-### Can I add more plugins?
+## Co upravit jako první?
 
-Yes, but keep the stack lean. Add only what has a clear benefit and a proven maintenance story.
+- `site_url`
+- `repo_url`
+- `repo_name`
+- branding v `README.md`
+- úvodní stránku `docs/index.md`

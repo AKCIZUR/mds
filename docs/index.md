@@ -1,57 +1,48 @@
-# Shadcn documentation shell
+# VCCSD Docs Dark
 
-:::info
-This release uses a compact, production-minded MkDocs stack with a shadcn-inspired visual layer on top of Material for MkDocs.
-:::
-
-<div class="lang-switch" data-lang-switch>
-  <button type="button" data-switch-to="cs">CZ</button>
-  <button type="button" data-switch-to="en">EN</button>
+<div class="hero-shell">
+  <div class="hero-kicker">Dark shadcn template · MkDocs · production-ready</div>
+  <h1 class="hero-title">Minimalistická dokumentace, která drží tempo a nepřekáží obsahu.</h1>
+  <p class="hero-lead">Tahle verze je navržená jako čistý produktový starter. Dark-only vzhled, přehledná navigace, ostrý code styling a stabilní GitHub Pages deploy bez rozbitých odkazů nebo prázdných override složek.</p>
 </div>
 
-<div data-lang="cs">
-Moderní dokumentační základ s čistším layoutem, lepší čitelností kódu, rychlejším načítáním a plynulejším pohybem po stránkách.
-</div>
-
-<div data-lang="en">
-A modern documentation base with a cleaner layout, stronger code readability, faster perceived loading, and smoother page movement.
-</div>
-
-## Wireframe
-
-<a class="wireframe-link glightbox" href="assets/wireframe-home.svg" data-type="image">
-  <img src="assets/wireframe-home.svg" alt="Homepage wireframe" class="wireframe-preview" />
-</a>
-
-## What the shell includes
+## Co dostane tým
 
 <div class="feature-grid">
-  <section class="feature-card">
-    <h3>Shadcn-inspired layout</h3>
-    <p>Whitespace, soft borders, and restrained accents keep the interface calm and crisp.</p>
-  </section>
-  <section class="feature-card">
-    <h3>Code focus</h3>
-    <p>Code blocks use a header, syntax tinting, and consistent spacing for each language.</p>
-  </section>
-  <section class="feature-card">
-    <h3>Language toggle</h3>
-    <p>Users can switch Czech and English through a visible control with local persistence.</p>
-  </section>
-  <section class="feature-card">
-    <h3>Loading states</h3>
-    <p>Skeletons preserve layout and remove the feeling of an empty or broken page.</p>
-  </section>
+  <div class="feature-card">
+    <strong>Shadcn dark mood</strong>
+    <p>Kontrastní, čistý a kompaktní vzhled s jemnými hranami a tlumenými povrchy.</p>
+  </div>
+  <div class="feature-card">
+    <strong>Rychlé vyhledávání</strong>
+    <p>Vložené search pole a standardní MkDocs search bez vlastních těžkých záplat.</p>
+  </div>
+  <div class="feature-card">
+    <strong>Syntax highlighting</strong>
+    <p>Podpora pro code bloky, inline code a přehledné ukázky konfigurace.</p>
+  </div>
+  <div class="feature-card">
+    <strong>GitHub Pages ready</strong>
+    <p>Workflow je připravený pro build a deploy na `main` branch.</p>
+  </div>
 </div>
 
-## Quick sample
+## Rychlý přehled
 
-```ts title="src/app.ts"
-export function greet(name: string) {
-  return `Hello, ${name}`
-}
+- levý sidebar pro strukturu
+- horní lišta pro identitu a search
+- pravý panel pro obsah stránky
+- dark-only styling
+- čistý základ pro další rozšiřování
+
+## Ukázka kódu
+
+```bash
+mkdocs serve
+mkdocs build --strict
 ```
 
-## Design system
+## Návrh dalšího rozvoje
 
-See the [token layer](design-system.md) for the visual rules behind the shadcn-inspired shell.
+!!! tip
+    Pokud má projekt růst, přidej nejdřív stránku `design-system.md` a `performance.md`. Drží to informaci na jednom místě a zmenší to chaos v menu.

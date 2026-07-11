@@ -1,17 +1,16 @@
 # Release notes
 
-## v4.0.0
+## v1.0.0
 
-- převedeno na koherentní shadcn-inspired vizuální vrstvu
-- odstraněna rozbitá reference na chybějící `overrides/`
-- zpřesněné skeleton loading stavy a scroll behavior
-- robustnější jazykový toggle CZ / EN
-- čistší code block styling pro lepší čitelnost
-- zachován stabilní, ověřený MkDocs plugin stack
+- shadcn dark starter
+- čistý layout pro dokumentaci
+- code-friendly typografie
+- přehledná navigace
+- GitHub Pages deploy workflow
+- připravený základ pro další růst
 
-## v3.0.0
+## Další krok
 
-- switched to a fully documented Material for MkDocs stack
-- added tested plugins only
-- improved bilingual UX, loading shells, and scrolling guidelines
-- reorganized pages into sections that scale cleanly
+- doplnit vlastní produktové stránky
+- přidat API reference nebo FAQ podle projektu
+- přidat další brand assety, pokud jsou potřeba

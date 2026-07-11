@@ -1,62 +1,23 @@
-site_name: Shadcn MkDocs Release
-site_description: A coherent shadcn-style documentation starter for GitHub Pages.
+site_name: VCCSD Docs Dark
+site_description: Shadcn-inspired dark documentation starter for GitHub Pages.
 site_url: https://USERNAME.github.io/REPO/
 repo_url: https://github.com/USERNAME/REPO
 repo_name: REPO
 edit_uri: edit/main/docs/
 use_directory_urls: true
-watch:
-  - docs
+
+site_author: VCCSD
+copyright: Copyright &copy; 2026 VCCSD
 
 theme:
-  name: material
-  language: cs
-  palette:
-    - scheme: default
-      primary: white
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Dark mode
-    - scheme: slate
-      primary: slate
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Light mode
-  font:
-    text: Inter
-    code: JetBrains Mono
-  features:
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.tracking
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - toc.follow
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - content.code.annotate
-    - content.tabs.link
-    - content.action.edit
-
-plugins:
-  - search
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      js_files:
-        - assets/app.js
-      css_files:
-        - assets/custom.css
-      cache_safe: true
-  - glightbox
-  - literate-nav:
-      nav_file: SUMMARY.md
-  - section-index
+  name: shadcn
+  show_title: true
+  show_stargazers: false
+  topbar_sections: false
+  show_datetime: false
+  pygments_style:
+    light: shadcn-light
+    dark: github-dark
 
 markdown_extensions:
   - admonition
@@ -68,21 +29,37 @@ markdown_extensions:
   - toc:
       permalink: true
       title: Obsah stránky
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
-      auto_title: false
+      auto_title: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.details
+
+plugins:
+  - search
 
 extra_css:
   - assets/custom.css
 
-extra_javascript:
-  - assets/app.js
+nav:
+  - Domů: index.md
+  - Start:
+      - Rychlý start: getting-started.md
+      - Design system: design-system.md
+      - Layout a navigace: navigation.md
+  - UI a obsah:
+      - Code blocks: code.md
+      - Komponenty: components.md
+      - Performance: performance.md
+  - Reference:
+      - Přehled: reference.md
+      - FAQ: faq.md
+      - Release notes: releases.md
+      - Changelog: changelog.md

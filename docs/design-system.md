@@ -1,28 +1,40 @@
 # Design system
 
-<div data-lang="cs">
-Tato vrstva definuje šířku layoutu, radius, kontrast, code blocks i skeletony tak, aby vizuál držel jednu linii.
+Tahle šablona vychází z dark shadcn principů: nízký kontrast pozadí, jemné border line, měkké radiusy a minimum vizuálního hluku.
+
+## Tokeny
+
+<div class="token-list">
+  <span class="token">background</span>
+  <span class="token">foreground</span>
+  <span class="token">card</span>
+  <span class="token">popover</span>
+  <span class="token">primary</span>
+  <span class="token">secondary</span>
+  <span class="token">muted</span>
+  <span class="token">accent</span>
+  <span class="token">border</span>
+  <span class="token">radius</span>
 </div>
 
-<div data-lang="en">
-This layer defines layout width, radius, contrast, code blocks, and skeletons so the visual language stays aligned.
-</div>
+## Zásady
 
-## Token direction
+- používej jeden dominantní textový tón
+- odděluj bloky spíš prostorem než silnými barvami
+- code bloky drž v jasně odděleném panelu
+- CTA tlačítka nech jen tam, kde skutečně vedou k akci
 
-```css
-:root {
-  --radius: 18px;
-  --surface: rgba(255, 255, 255, 0.82);
-  --border: rgba(24, 24, 27, 0.12);
-  --accent: #4f46e5;
-}
-```
+## Typografie
 
-## Components
+- hlavní text: Inter nebo systémová varianta
+- kód: JetBrains Mono
+- nadpisy: vyšší váha, menší tracking, bez efektního zdobení
 
-- cards with soft borders
-- pill toggles for language selection
-- readable code panels with language emphasis
-- skeletons with stable dimensions
-- smooth anchors with reduced-motion respect
+## Stavové prvky
+
+- hover: lehké zvýraznění okraje
+- focus: viditelný ring
+- active: jemný posun, ne dramatická animace
+
+!!! tip
+    V dokumentaci drž konzistenci. Jeden styl tlačítek, jeden styl karet, jeden styl code blocků.

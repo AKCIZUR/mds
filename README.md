@@ -1,41 +1,42 @@
-# Shadcn MkDocs Release v4.0.0
+# VCCSD Docs Dark
 
-Kompaktní dokumentační starter pro GitHub Pages postavený na MkDocs Material, ale vizuálně laděný do čistého shadcn/ui stylu.
+Produční dokumentační starter pro GitHub Pages postavený na `mkdocs-shadcn` s dark-only shadcn-like vizuálem.
 
-## Co balík obsahuje
+## Co je uvnitř
 
-- shadcn-inspired light/dark theme layer
-- bilingual UX CZ / EN v jednom webu
-- skeleton loading vzory pro lepší perceived performance
-- jemné smooth scrolling chování s offsetem pro anchor odkazy
-- code block styling se syntaxí a důrazem na čitelnost
-- GLightbox pro obrázky
-- literate-nav a section-index pro přehlednou strukturu
-- minifikaci výstupu přes build plugin
+- minimalistický dark layout
+- levý panel s navigací
+- horní lišta se search a brandingem
+- pravý panel s obsahem stránky
+- syntax highlighting pro kód
+- připravený GitHub Actions deploy
+- obsahové stránky pro design system, code blocks, performance a reference
 
-## Lokální spuštění
+## Spuštění lokálně
 
 ```bash
 python -m venv .venv
-# Windows
+# Windows:
 .venv\Scripts\activate
+# macOS / Linux:
+source .venv/bin/activate
+
 pip install -r requirements.txt
 mkdocs serve
 ```
 
-## Build
+## Produkční build
 
 ```bash
 mkdocs build --strict
 ```
 
-## Nasazení
+## Deploy
 
-Workflow v `.github/workflows/deploy.yml` publikuje na GitHub Pages.
+Workflow `.github/workflows/deploy.yml` publikuje obsah na GitHub Pages z větve `main`.
 
-## Co upravit před nasazením
+## Před nasazením uprav
 
-- `site_url`, `repo_url`, `repo_name` v `mkdocs.yml`
-- texty v `docs/`
-- vizuální tokeny v `docs/assets/custom.css`
-- případně cesty na logo a favicon
+- `site_url`, `repo_url` a `repo_name` v `mkdocs.yml`
+- logo a favicon v `docs/assets/`
+- vlastní brand texty v `docs/`
