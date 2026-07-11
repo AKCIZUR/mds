@@ -1,22 +1,13 @@
 # FAQ
 
-## Je to light/dark přepínatelné?
+### Is this production-ready?
 
-Ne. Tato verze je vynuceně dark-only.
+It is structured like a production starter, but you should still run `mkdocs build` in your own environment and verify the final content.
 
-## Je to připravené pro GitHub Pages?
+### Can I split CZ and EN into separate folders?
 
-Ano. Workflow je součástí repozitáře.
+Yes. This starter keeps both languages in one shell for simplicity, but the structure can be split later.
 
-## Můžu to použít jako základ pro jiné projekty?
+### Can I add more plugins?
 
-Ano. Stačí přepsat branding, URL a obsah.
-
-## Co je nejdůležitější upravit hned?
-
-- `USERNAME`
-- `REPO`
-- logo
-- favicon
-- úvodní text
-- CZ / EN page set
+Yes, but keep the stack lean. Add only what has a clear benefit and a proven maintenance story.

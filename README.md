@@ -1,26 +1,24 @@
-# MkDocs Shadcn GitHub Ready v2.1
+# Minimalist MkDocs Release v3.0
 
-Produkční dokumentační šablona pro GitHub Pages postavená na `mkdocs-shadcn`.
+Komplexní dokumentační starter pro GitHub Pages postavený na ověřených MkDocs prvcích a Material for MkDocs.
 
-## Co je uvnitř
+## Co balík obsahuje
 
 - minimalistický dark layout
-- code block komponenta s toolbar stylem
-- jazykový toggle Czech / English
+- bilingvní obsah CZ / EN v jednom webu
 - skeleton loading vzory
-- lazy loading a jemnější scroll behavior
-- připravený GitHub Actions deploy
-- více stránek pro start, architekturu, komponenty, reference, FAQ a release notes
+- jemnější scrolling a instant navigation
+- code block styling s toolbarem a syntaxy
+- lightbox pro obrázky přes GLightbox
+- literate nav a section-index pro přehlednou strukturu
+- minifikaci výstupu přes build plugin
 
-## Spuštění lokálně
+## Lokální spuštění
 
 ```bash
 python -m venv .venv
-# Windows:
+# Windows
 .venv\Scripts\activate
-# macOS / Linux:
-source .venv/bin/activate
-
 pip install -r requirements.txt
 mkdocs serve
 ```
@@ -31,13 +29,13 @@ mkdocs serve
 mkdocs build
 ```
 
-## Deploy
+## Nasazení
 
-Workflow `.github/workflows/deploy.yml` publikuje obsah na GitHub Pages z větve `main`.
+Workflow v `.github/workflows/deploy.yml` publikuje na GitHub Pages.
 
 ## Co upravit před nasazením
 
-- `site_url`, `repo_url` a `repo_name` v `mkdocs.yml`
-- logo a favicon v `docs/assets/`
-- vlastní texty v `docs/`
-- CZ / EN obsah pro celý web
+- `site_url`, `repo_url`, `repo_name` v `mkdocs.yml`
+- texty v `docs/`
+- branding v `docs/assets/custom.css`
+- případně cesty na logo a favicon
