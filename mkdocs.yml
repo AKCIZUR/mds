@@ -1,78 +1,66 @@
-site_name: VCCSD Docs
-site_description: Production documentation starter with a shadcn-inspired dark UI.
-site_url: https://USERNAME.github.io/REPO/
-repo_url: https://github.com/USERNAME/REPO
-repo_name: REPO
-edit_uri: edit/main/docs/
-use_directory_urls: true
-
+site_name: ShadDocs Dark
+site_description: Dark shadcn-inspired documentation system for MkDocs.
 theme:
   name: material
-  language: cs
-  palette:
-    - scheme: slate
-      primary: slate
-      accent: indigo
+  custom_dir: overrides
   font:
     text: Inter
     code: JetBrains Mono
+  icon:
+    logo: material/book-open-page-variant
+  palette:
+  - scheme: slate
+    primary: black
+    accent: indigo
   features:
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.tracking
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - navigation.indexes
-    - toc.follow
-    - search.highlight
-    - search.share
-    - content.tabs.link
-    - content.action.edit
-
+  - navigation.instant
+  - navigation.tracking
+  - navigation.top
+  - navigation.sections
+  - navigation.indexes
+  - toc.follow
+  - content.code.copy
+  - content.code.annotate
+  - search.highlight
+  - search.share
 plugins:
-  - search
-
+- search
+- glightbox
+- minify:
+    minify_html: true
 markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - tables
-  - toc:
-      permalink: true
-      title: Obsah stránky
-  - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-      auto_title: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-
+- admonition
+- attr_list
+- def_list
+- footnotes
+- md_in_html
+- tables
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.details
+- pymdownx.inlinehilite
 extra_css:
-  - assets/custom.css
-
+- assets/css/theme.css
 extra_javascript:
-  - assets/app.js
-
+- assets/js/app.js
 nav:
-  - Domů: index.md
-  - Start:
-      - Rychlý start: getting-started.md
-      - Struktura projektu: architecture.md
-  - Komponenty:
-      - Přehled: components.md
-      - Code blocks: code-blocks.md
-      - Language toggle: language-toggle.md
-  - Reference:
-      - Přehled: reference.md
-      - FAQ: faq.md
-      - Release notes: releases.md
-      - Changelog: changelog.md
+- Home: index.md
+- Česky:
+  - Start: cs/index.md
+  - Architecture: cs/architecture.md
+  - Code blocks: cs/code-blocks.md
+  - Loading: cs/loading.md
+  - Scrolling: cs/scrolling.md
+  - Release notes: cs/release-notes.md
+- English:
+  - Start: en/index.md
+  - Architecture: en/architecture.md
+  - Code blocks: en/code-blocks.md
+  - Loading: en/loading.md
+  - Scrolling: en/scrolling.md
+  - Release notes: en/release-notes.md

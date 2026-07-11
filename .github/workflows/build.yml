@@ -1,19 +1,12 @@
-name: Deploy
+name: Build
 
 on:
+  pull_request:
   push:
     branches: [main]
-    paths:
-      - "docs/**"
-      - "overrides/**"
-      - "mkdocs.yml"
-      - "requirements.txt"
-
-permissions:
-  contents: write
 
 jobs:
-  deploy:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,11 +20,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build site
+      - name: MkDocs strict build
         run: mkdocs build --strict
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site

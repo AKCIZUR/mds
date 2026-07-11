@@ -1,43 +1,43 @@
-# VCCSD Docs Dark Prod v5
+# ShadDocs Dark
 
-Produkční dokumentační starter s dark shadcn-like vzhledem, postavený na stabilním MkDocs Material jádru.
+A production-ready MkDocs documentation repo with a shadcn-inspired dark UI.
 
-## Co je uvnitř
+## What is included
 
-- minimalistický dark layout inspirovaný shadcn/ui
-- výrazně lepší code block boxy s vlastním toolbarem
-- CZ / EN jazykový toggle
-- skeleton loading shell
-- jemnější scroll behavior a reveal animace
-- GitHub Pages deploy workflow
-- čistá struktura bez chybějících override cest
+- Material for MkDocs base
+- custom dark shadcn-like theme layer
+- override-first structure
+- enhanced code block shells with Copy, Wrap, Collapse
+- Czech and English page sets
+- skeleton loading overlay
+- smooth scroll helpers
+- lazy image handling
+- GitHub Pages workflow
+- build-safe config for `mkdocs build --strict`
 
-## Spuštění lokálně
+## Local run
 
 ```bash
 python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# macOS / Linux:
 source .venv/bin/activate
-
 pip install -r requirements.txt
 mkdocs serve
 ```
 
-## Build
+## Strict build
 
 ```bash
 mkdocs build --strict
 ```
 
-## Deploy
+## Structure
 
-Workflow `.github/workflows/deploy.yml` publikuje obsah na GitHub Pages z větve `main`.
+- `docs/` source content
+- `overrides/` template overrides
+- `docs/assets/css/theme.css` theme layer
+- `docs/assets/js/app.js` UI enhancements
+- `.github/workflows/` CI and deploy
 
-## Co upravit před nasazením
+## Notes
 
-- `site_url`, `repo_url` a `repo_name` v `mkdocs.yml`
-- logo a favicon v `docs/assets/`
-- vlastní texty v `docs/`
-- CZ / EN obsah pro celý web
+Replace `site_url`, repository links and branding to match your project.
