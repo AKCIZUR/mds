@@ -1,0 +1,33 @@
+.skeleton-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.12), rgba(255,255,255,0.06)),
+    var(--md-default-bg-color);
+  opacity: 1;
+  transition: opacity .25s ease;
+}
+
+.skeleton-overlay.is-hidden {
+  opacity: 0;
+}
+
+.skeleton-bar {
+  border-radius: 999px;
+  height: 12px;
+  margin: 16px auto;
+  width: min(70vw, 640px);
+  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.18), rgba(255,255,255,0.04));
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.2s infinite linear;
+}
+
+.skeleton-bar.wide { width: min(82vw, 960px); height: 16px; }
+.skeleton-bar.short { width: min(38vw, 320px); }
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}

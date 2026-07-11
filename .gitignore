@@ -1,9 +1,9 @@
-site/
 .venv/
 __pycache__/
 .pytest_cache/
 .mypy_cache/
-.ruff_cache/
+site/
+dist/
+build/
 .DS_Store
-*.pyc
-*.zip
+docs/assets/search-index.json

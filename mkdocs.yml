@@ -1,110 +1,104 @@
-site_name: MkDocs MaterialX Pro
-site_description: Coherent production-ready docs starter with dark MaterialX styling.
-site_url: https://USERNAME.github.io/REPO/
-repo_url: https://github.com/USERNAME/REPO
-repo_name: REPO
+site_name: MaterialX Docs Starter
+site_description: Production-ready MkDocs MaterialX starter for GitHub Pages.
+site_author: OpenAI
+# Update this to your actual published Pages URL before release.
+site_url: https://example.github.io/materialx-docs-starter/
+
+repo_name: materialx-docs-starter
+repo_url: https://github.com/USERNAME/materialx-docs-starter
 edit_uri: edit/main/docs/
 
+docs_dir: docs
+site_dir: site
+
 theme:
-  name: material
-  language: cs
-  logo: assets/images/logo.svg
-  favicon: assets/images/favicon.svg
+  name: materialx
+  custom_dir: docs/overrides
+  language: en
   palette:
     - scheme: slate
       primary: slate
-      accent: cyan
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: slate
+      accent: indigo
       toggle:
         icon: material/weather-night
-        name: Dark mode
+        name: Switch to dark mode
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
-    - navigation.top
+    - navigation.indexes
+    - navigation.path
+    - navigation.footer
+    - navigation.tracking
     - navigation.instant
     - navigation.instant.prefetch
-    - navigation.indexes
-    - content.code.copy
-    - content.action.edit
-    - search.suggest
+    - toc.follow
     - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.tabs.link
+    - content.tooltips
 
 plugins:
-  - search
-  - mkdocstrings
-  - mike
-  - glightbox
-  - mermaid2
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+  - awesome-pages
   - minify:
       minify_html: true
-  - macros
-  - git-revision-date-localized:
-      type: datetime
 
 markdown_extensions:
   - admonition
-  - tables
-  - def_list
   - attr_list
-  - md_in_html
+  - def_list
   - footnotes
+  - md_in_html
   - toc:
       permalink: true
+      toc_depth: 3
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: true
-      line_spans: __span
+      linenums: true
+      linenums_style: table
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.keys
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.smartsymbols
 
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/USERNAME/materialx-docs-starter
+    - icon: fontawesome/brands/discourse
+      link: https://example.com/community
   generator: false
 
 extra_css:
-  - assets/css/custom.css
+  - assets/css/extra.css
+  - assets/css/skeleton.css
+  - assets/css/syntax.css
 
 extra_javascript:
-  - assets/js/site-meta.js
   - assets/js/app.js
-  - assets/js/openapi.js
-  - assets/js/mermaid-lite.js
-
-nav:
-  - Domů: index.md
-  - Docs:
-      - Start: cs/getting-started.md
-      - Funkce: cs/features/index.md
-      - Architektura: cs/architecture.md
-      - Komponenty: cs/components.md
-      - Reference: cs/reference.md
-      - FAQ: cs/faq.md
-      - Blog:
-          - Přehled: blog/index.md
-          - Release launch: blog/release-launch.md
-          - Design update: blog/design-update.md
-      - API: cs/api/index.md
-      - Verze: versions/index.md
-  - EN:
-      - Home: en/index.md
-      - Getting started: en/getting-started.md
-      - Features: en/features/index.md
-      - Architecture: en/architecture.md
-      - Components: en/components.md
-      - Reference: en/reference.md
-      - FAQ: en/faq.md
-      - Blog:
-          - Overview: en/blog/index.md
-          - Release launch: en/blog/release-launch.md
-          - Design update: en/blog/design-update.md
-      - API: en/api/index.md
-      - Versions: en/versions/index.md
+  - assets/js/skeleton.js

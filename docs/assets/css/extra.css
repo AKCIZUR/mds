@@ -1,0 +1,71 @@
+:root {
+  --md-typeset-a-color: var(--md-accent-fg-color);
+  --md-code-bg-color: rgba(255, 255, 255, 0.03);
+  --md-code-fg-color: var(--md-default-fg-color);
+}
+
+.md-header {
+  backdrop-filter: saturate(180%) blur(12px);
+}
+
+.hero-grid,
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 1.5rem 0 2rem;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.hero-card,
+.feature-card {
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  border-radius: 1rem;
+  padding: 1.1rem 1.2rem;
+  background: color-mix(in srgb, var(--md-default-bg-color) 90%, transparent);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.eyebrow {
+  margin: 0 0 .4rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .72rem;
+  opacity: .75;
+}
+
+.checklist {
+  margin: .5rem 0 0 1.1rem;
+}
+
+.md-typeset pre > code {
+  border-radius: .9rem;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+}
+
+.md-typeset code {
+  font-variant-ligatures: none;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: .9rem;
+}
+
+.md-footer {
+  border-top: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+}
+
+@media (max-width: 767px) {
+  .hero-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

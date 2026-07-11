@@ -1,0 +1,49 @@
+/* Accent frames for code blocks by language. Pygments adds language classes when pygments_lang_class is enabled. */
+.highlight.language-html,
+.highlight.language-xml,
+.highlight.language-markup {
+  border-left: 4px solid #f97316;
+}
+
+.highlight.language-css,
+.highlight.language-scss {
+  border-left: 4px solid #38bdf8;
+}
+
+.highlight.language-js,
+.highlight.language-javascript,
+.highlight.language-ts,
+.highlight.language-typescript {
+  border-left: 4px solid #facc15;
+}
+
+.highlight.language-json {
+  border-left: 4px solid #22c55e;
+}
+
+.highlight.language-yaml,
+.highlight.language-yml {
+  border-left: 4px solid #c084fc;
+}
+
+.highlight.language-python {
+  border-left: 4px solid #2dd4bf;
+}
+
+.highlight.language-bash,
+.highlight.language-sh,
+.highlight.language-shell {
+  border-left: 4px solid #4ade80;
+}
+
+.highlight.language-rust {
+  border-left: 4px solid #fb923c;
+}
+
+.highlight.language-go {
+  border-left: 4px solid #67e8f9;
+}
+
+.highlight.language-php {
+  border-left: 4px solid #a78bfa;
+}
