@@ -1,0 +1,248 @@
+[
+  {
+    "title": "Design update",
+    "summary": "The UI uses a dark-first composition with restrained surfaces and sharp readable code blocks.",
+    "href": "/blog/design-update/",
+    "tags": [
+      "design",
+      "update"
+    ]
+  },
+  {
+    "title": "Blog",
+    "summary": "Dokumentace",
+    "href": "/blog/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Release launch",
+    "summary": "This release focuses on coherent structure, production-ready defaults and maintenance-friendly content layers.",
+    "href": "/blog/release-launch/",
+    "tags": [
+      "release",
+      "launch"
+    ]
+  },
+  {
+    "title": "API dokumentace",
+    "summary": "<div data-openapi-src=\"../assets/openapi/openapi.yaml\"></div>",
+    "href": "/cs/api/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Architektura",
+    "summary": "sequenceDiagram participant Author participant Repo participant CI participant Site Author->>Repo: push Markdown Repo->>CI: GitHub Actions build CI->>Site: publish static docs",
+    "href": "/cs/architecture/",
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "title": "Komponenty",
+    "summary": "Dokumentace",
+    "href": "/cs/components/",
+    "tags": [
+      "components"
+    ]
+  },
+  {
+    "title": "FAQ",
+    "summary": "Ano, web je generovaný jako statická dokumentace.",
+    "href": "/cs/faq/",
+    "tags": [
+      "faq"
+    ]
+  },
+  {
+    "title": "Funkce",
+    "summary": "Tento základ je navržen tak, aby se dal rozšiřovat bez rozbití struktury.",
+    "href": "/cs/features/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Rychlý start",
+    "summary": "pip install -r requirements.txt python scripts/generate_indexes.py mkdocs serve",
+    "href": "/cs/getting-started/",
+    "tags": [
+      "getting",
+      "started"
+    ]
+  },
+  {
+    "title": "Reference",
+    "summary": "Repo je koncipované jako čistý production starter, ne jako experimentální demo.",
+    "href": "/cs/reference/",
+    "tags": [
+      "reference"
+    ]
+  },
+  {
+    "title": "API documentation",
+    "summary": "<div data-openapi-src=\"../assets/openapi/openapi.yaml\"></div>",
+    "href": "/en/api/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Architecture",
+    "summary": "Dokumentace",
+    "href": "/en/architecture/",
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "title": "Design update",
+    "summary": "The UI uses a dark-first composition with restrained surfaces and sharp readable code blocks.",
+    "href": "/en/blog/design-update/",
+    "tags": [
+      "design",
+      "update"
+    ]
+  },
+  {
+    "title": "Blog",
+    "summary": "Dokumentace",
+    "href": "/en/blog/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Release launch",
+    "summary": "This release focuses on coherent structure, production-ready defaults and maintenance-friendly content layers.",
+    "href": "/en/blog/release-launch/",
+    "tags": [
+      "release",
+      "launch"
+    ]
+  },
+  {
+    "title": "Components",
+    "summary": "Dokumentace",
+    "href": "/en/components/",
+    "tags": [
+      "components"
+    ]
+  },
+  {
+    "title": "FAQ",
+    "summary": "Yes, the site is generated as static documentation.",
+    "href": "/en/faq/",
+    "tags": [
+      "faq"
+    ]
+  },
+  {
+    "title": "Features",
+    "summary": "Dokumentace",
+    "href": "/en/features/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Getting started",
+    "summary": "pip install -r requirements.txt python scripts/generate_indexes.py mkdocs serve",
+    "href": "/en/getting-started/",
+    "tags": [
+      "getting",
+      "started"
+    ]
+  },
+  {
+    "title": "Coherent MkDocs Pro",
+    "summary": "Production-ready documentation starter.",
+    "href": "/en/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Reference",
+    "summary": "Dokumentace",
+    "href": "/en/reference/",
+    "tags": [
+      "reference"
+    ]
+  },
+  {
+    "title": "1.0",
+    "summary": "Version 1.0 is the initial starter baseline.",
+    "href": "/en/versions/1.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "2.0",
+    "summary": "Version 2.0 contains the current coherent starter with search, i18n and blog.",
+    "href": "/en/versions/2.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Versions",
+    "summary": "Dokumentace",
+    "href": "/en/versions/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "latest",
+    "summary": "The latest version points to the current production starter.",
+    "href": "/en/versions/latest/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Coherent MkDocs Pro",
+    "summary": "Produkční starter pro technickou dokumentaci.",
+    "href": "/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "1.0",
+    "summary": "Version 1.0 is the initial starter baseline.",
+    "href": "/versions/1.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "2.0",
+    "summary": "Version 2.0 contains the current coherent starter with search, i18n and blog.",
+    "href": "/versions/2.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Versions",
+    "summary": "Dokumentace",
+    "href": "/versions/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "latest",
+    "summary": "The latest version points to the current production starter.",
+    "href": "/versions/latest/index/",
+    "tags": [
+      "index"
+    ]
+  }
+]

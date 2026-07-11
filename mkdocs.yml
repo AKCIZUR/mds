@@ -1,0 +1,110 @@
+site_name: Coherent MkDocs Pro
+site_description: Production-ready documentation starter with search, versions, blog and i18n.
+site_url: https://USERNAME.github.io/REPO/
+repo_url: https://github.com/USERNAME/REPO
+repo_name: REPO
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: cs
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
+  palette:
+    - scheme: slate
+      primary: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.indexes
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - mkdocstrings
+  - mike
+  - glightbox
+  - mermaid2
+  - minify:
+      minify_html: true
+  - macros
+  - git-revision-date-localized:
+      type: datetime
+
+markdown_extensions:
+  - admonition
+  - tables
+  - def_list
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  generator: false
+
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/site-meta.js
+  - assets/js/app.js
+  - assets/js/openapi.js
+  - assets/js/mermaid-lite.js
+
+nav:
+  - Domů: index.md
+  - Docs:
+      - Start: cs/getting-started.md
+      - Funkce: cs/features/index.md
+      - Architektura: cs/architecture.md
+      - Komponenty: cs/components.md
+      - Reference: cs/reference.md
+      - FAQ: cs/faq.md
+      - Blog:
+          - Přehled: blog/index.md
+          - Release launch: blog/release-launch.md
+          - Design update: blog/design-update.md
+      - API: cs/api/index.md
+      - Verze: versions/index.md
+  - EN:
+      - Home: en/index.md
+      - Getting started: en/getting-started.md
+      - Features: en/features/index.md
+      - Architecture: en/architecture.md
+      - Components: en/components.md
+      - Reference: en/reference.md
+      - FAQ: en/faq.md
+      - Blog:
+          - Overview: en/blog/index.md
+          - Release launch: en/blog/release-launch.md
+          - Design update: en/blog/design-update.md
+      - API: en/api/index.md
+      - Versions: en/versions/index.md
