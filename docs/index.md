@@ -1,32 +1,34 @@
 # VCCSD Docs
 
-Moderní dokumentační základ s levým menu, horním panelem, obsahem stránky a vynuceným dark režimem.
+Moderní dokumentační základ s jemným glass efektem, výrazným code blokem, CZ/EN strukturou a plynulým scrollováním.
 
 ## Co je připraveno
 
-- plná navigace v levém panelu
-- rychlé vyhledávání
-- pravý panel s obsahem stránky
-- GitHub Pages deploy přes Actions
-- čistý základ pro produktové i interní dokumentace
+- přehledná navigace vlevo
+- jemnější dark theme s větší hloubkou vrstev
+- minimalistické code bloky s barvením podle jazyka
+- skeleton vrstva při načítání
+- lazy loading obrázků a embedů
+- CZ/EN přepínání s odpovídající strukturou
 
-## Vzhled
+## Design směr
 
 !!! note
-    Tato verze je schválně dark-only. Bez přepínače, bez světelné varianty.
+    Cíl je čistý, „produktový“ vzhled bez přeplácání. Důraz je na čitelnost, hierarchii a kvalitní code snippety.
 
-!!! tip
-    Menu stav co nejprve drž nízko. Přidej sekce až ve chvíli, kdy opravdu existují.
+## Ukázka
 
-## Ukázka použití
-
-```bash
-mkdocs serve
+```ts
+const theme = {
+  mode: 'dark',
+  accent: 'cyan',
+  motion: 'soft',
+}
 ```
 
 ## Co dál
 
-- doplnit vlastní články
-- vyměnit branding
-- přidat API reference
-- připojit repository na GitHub Pages
+- doplnit vlastní značku
+- rozšířit sekce podle produktu
+- připravit reálné API reference
+- držet obsah krátký a přesný

@@ -1,12 +1,6 @@
 # Navigace a layout
 
-Tento základ je připravený pro dokumentaci, kde je důležité:
-
-- levé menu se sekcemi
-- horní lišta s identitou projektu
-- pravý panel s obsahem stránky
-- vyhledávání v obsahu
-- jasná hierarchie článků
+Tento základ je navržený pro dokumentaci, která má působit rychle, moderně a čitelně.
 
 ## Doporučené členění menu
 
@@ -17,6 +11,7 @@ Tento základ je připravený pro dokumentaci, kde je důležité:
 - FAQ
 - Release notes
 - Changelog
+- English mirror
 
 ## Panelové rozvržení
 
@@ -29,5 +24,5 @@ Tento základ je připravený pro dokumentaci, kde je důležité:
 
 ## Poznámka
 
-!!! warning
-    Pokud je menu příliš hluboké, dokumentace začne působit těžkopádně. Pro začátek stačí plochá a přehledná struktura.
+!!! tip
+    Když bude menu stručné a logické, celý web bude působit výrazně prémiověji.

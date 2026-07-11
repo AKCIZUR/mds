@@ -1,15 +1,17 @@
-# MkDocs Shadcn GitHub Ready v2
+# MkDocs Shadcn GitHub Ready v3
 
-Produční dokumentační šablona pro GitHub Pages postavená na `mkdocs-shadcn`.
+Produkční dokumentační šablona pro GitHub Pages s jemným dark glass stylem, CZ/EN strukturou, syntax-aware code bloky, skeleton loadingem a plynulejším scrollováním.
 
 ## Co je uvnitř
 
 - levý panel s plnou navigací
 - horní lišta s logem, vyhledáváním a odkazy
 - pravý panel s obsahem stránky
-- vynucený dark režim
-- připravený GitHub Actions deploy
-- více stránek pro start, architekturu, komponenty, reference, FAQ a release notes
+- minimalistické code bloky s barevným zvýrazněním podle jazyka
+- CZ/EN přepínání
+- skeleton overlay při načítání
+- lazy loading médií
+- plynulejší scroll s jemným inertia efektem
 
 ## Spuštění lokálně
 
@@ -38,4 +40,4 @@ Workflow `.github/workflows/deploy.yml` publikuje obsah na GitHub Pages z větve
 
 - `site_url`, `repo_url` a `repo_name` v `mkdocs.yml`
 - logo a favicon v `docs/assets/`
-- vlastní texty v `docs/`
+- český a anglický text v `docs/` a `docs/en/`

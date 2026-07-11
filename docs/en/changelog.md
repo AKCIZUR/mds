@@ -18,4 +18,4 @@
 
 ## 1.0.0
 
-- první základní starter
+- initial starter

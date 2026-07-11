@@ -18,13 +18,10 @@ mkdocs serve
 mkdocs build --strict
 ```
 
-## Nasazení
-
-Po pushi do `main` se repozitář publikuje přes GitHub Actions.
-
 ## Doporučený postup
 
 1. uprav `site_url`
 2. uprav `repo_url`
-3. nahraď logo a favicon
-4. doplň vlastní obsah
+3. doplň logo a favicon
+4. vyplň českou i anglickou strukturu
+5. dolaď code highlighting podle technologií projektu

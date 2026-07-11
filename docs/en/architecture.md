@@ -1,4 +1,4 @@
-# Struktura projektu
+# Project structure
 
 ```text
 .
@@ -27,13 +27,13 @@
 └── README.md
 ```
 
-## Smysl rozdělení
+## Why this split works
 
 - `index.md`: landing page
-- `getting-started.md`: instalace a první kroky
-- `navigation.md`: menu a layout
-- `components.md`: bloky, callouty, code blocks
-- `reference.md`: technický přehled
-- `faq.md`: krátké odpovědi
-- `releases.md` a `changelog.md`: historie změn
-- `en/`: anglická varianta se stejnou strukturou
+- `getting-started.md`: onboarding
+- `navigation.md`: menu and layout
+- `components.md`: blocks, callouts, code blocks
+- `reference.md`: technical overview
+- `faq.md`: quick answers
+- `releases.md` and `changelog.md`: history
+- `en/`: English mirror with the same structure

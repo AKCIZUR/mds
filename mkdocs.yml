@@ -41,6 +41,9 @@ plugins:
 extra_css:
   - assets/custom.css
 
+extra_javascript:
+  - assets/app.js
+
 nav:
   - Domů: index.md
   - Start:
@@ -54,3 +57,13 @@ nav:
       - FAQ: faq.md
       - Release notes: releases.md
       - Changelog: changelog.md
+  - English:
+      - Home: en/index.md
+      - Getting started: en/getting-started.md
+      - Project structure: en/architecture.md
+      - Navigation: en/navigation.md
+      - Components: en/components.md
+      - Reference: en/reference.md
+      - FAQ: en/faq.md
+      - Release notes: en/releases.md
+      - Changelog: en/changelog.md

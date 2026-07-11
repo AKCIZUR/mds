@@ -1,6 +1,6 @@
 # Reference
 
-## Konfigurační minimum
+## Minimal config
 
 ```yaml
 site_name: VCCSD Docs
@@ -14,7 +14,7 @@ extra_javascript:
   - assets/app.js
 ```
 
-## Doporučené rozšíření
+## Recommended extensions
 
 - `admonition`
 - `tables`
@@ -24,9 +24,9 @@ extra_javascript:
 - `pymdownx.tabbed`
 - `pymdownx.tasklist`
 
-## Obsahové zásady
+## Content rules
 
-1. začni landing page
-2. přidej onboarding
-3. rozděl dokumentaci podle témat
-4. přidej FAQ, release notes a changelog
+1. start with a landing page
+2. add onboarding
+3. group documentation by topic
+4. add FAQ, release notes, and changelog

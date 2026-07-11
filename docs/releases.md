@@ -1,16 +1,16 @@
 # Release notes
 
-## V2
+## V3
 
-- plné menu
-- panelové rozvržení
-- dark-only styl
-- více obsahových stránek
-- připravený deploy workflow
-- čistší starter pro reálný projekt
+- jemnější theme s větší hloubkou vrstev
+- minimalistické code bloky s per-language akcentem
+- skeleton loading overlay
+- lazy loading media
+- CZ/EN struktura
+- plynulejší scroll feeling
 
 ## Další kroky
 
-- doplnit vlastní obsah
-- přidat další sekce podle projektu
-- vytvořit značkový branding
+- doplnit vlastní brand colors
+- přidat skutečné komponenty z projektu
+- rozšířit content o API reference

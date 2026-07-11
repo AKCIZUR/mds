@@ -4,9 +4,9 @@
 
 ### Dokumentace, která působí hotově
 
-Text lze použít na úvodní stránku, release notes i interní portál.
+Krátké texty, jasná hierarchie a dost prostoru kolem bloků.
 
-## Feature cards
+## Doporučené UI bloky
 
 | Blok | Využití |
 | --- | --- |
@@ -17,18 +17,12 @@ Text lze použít na úvodní stránku, release notes i interní portál.
 | Accordion | FAQ |
 | Timeline | release historie |
 
-## Callouty
-
-!!! note
-    Poznámky pro čtenáře.
-
-!!! tip
-    Krátké doporučení.
-
-!!! warning
-    Rizikové kroky nebo omezení.
-
 ## Code block
+
+```python
+def theme(accent: str) -> str:
+    return f"minimal-{accent}"
+```
 
 ```bash
 mkdocs build --strict
@@ -46,8 +40,8 @@ mkdocs build --strict
 
 ## Checklist
 
-- [x] dark-only styl
-- [x] menu
-- [x] toc panel
-- [x] deploy workflow
-- [x] README
+- [x] dark-only základ
+- [x] CZ/EN struktura
+- [x] code highlights
+- [x] skeleton loading
+- [x] plynulejší scroll
