@@ -1,5 +1,5 @@
-site_name: Minimalist MkDocs Release
-site_description: Minimalist bilingual documentation starter for GitHub Pages.
+site_name: Shadcn MkDocs Release
+site_description: A coherent shadcn-style documentation starter for GitHub Pages.
 site_url: https://USERNAME.github.io/REPO/
 repo_url: https://github.com/USERNAME/REPO
 repo_name: REPO
@@ -7,25 +7,23 @@ edit_uri: edit/main/docs/
 use_directory_urls: true
 watch:
   - docs
-  - overrides
 
 theme:
   name: material
-  custom_dir: overrides
   language: cs
   palette:
+    - scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
     - scheme: slate
       primary: slate
       accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Light mode
-    - scheme: default
-      primary: slate
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Dark mode
   font:
     text: Inter
     code: JetBrains Mono
@@ -88,4 +86,3 @@ extra_css:
 
 extra_javascript:
   - assets/app.js
-

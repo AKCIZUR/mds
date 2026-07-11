@@ -22,3 +22,4 @@ Skeletons show the page shape before the final content arrives. That removes the
 - `IntersectionObserver` for reveals
 - `content-visibility: auto` for long sections
 - small fade transitions after content swap
+- keep layout dimensions stable to reduce CLS

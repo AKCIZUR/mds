@@ -1,16 +1,16 @@
-# Minimalist MkDocs Release v3.0
+# Shadcn MkDocs Release v4.0.0
 
-Komplexní dokumentační starter pro GitHub Pages postavený na ověřených MkDocs prvcích a Material for MkDocs.
+Kompaktní dokumentační starter pro GitHub Pages postavený na MkDocs Material, ale vizuálně laděný do čistého shadcn/ui stylu.
 
 ## Co balík obsahuje
 
-- minimalistický dark layout
-- bilingvní obsah CZ / EN v jednom webu
-- skeleton loading vzory
-- jemnější scrolling a instant navigation
-- code block styling s toolbarem a syntaxy
-- lightbox pro obrázky přes GLightbox
-- literate nav a section-index pro přehlednou strukturu
+- shadcn-inspired light/dark theme layer
+- bilingual UX CZ / EN v jednom webu
+- skeleton loading vzory pro lepší perceived performance
+- jemné smooth scrolling chování s offsetem pro anchor odkazy
+- code block styling se syntaxí a důrazem na čitelnost
+- GLightbox pro obrázky
+- literate-nav a section-index pro přehlednou strukturu
 - minifikaci výstupu přes build plugin
 
 ## Lokální spuštění
@@ -26,7 +26,7 @@ mkdocs serve
 ## Build
 
 ```bash
-mkdocs build
+mkdocs build --strict
 ```
 
 ## Nasazení
@@ -37,5 +37,5 @@ Workflow v `.github/workflows/deploy.yml` publikuje na GitHub Pages.
 
 - `site_url`, `repo_url`, `repo_name` v `mkdocs.yml`
 - texty v `docs/`
-- branding v `docs/assets/custom.css`
+- vizuální tokeny v `docs/assets/custom.css`
 - případně cesty na logo a favicon

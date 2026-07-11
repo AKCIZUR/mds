@@ -27,6 +27,13 @@ def build_release(name: str) -> None:
 ## Bash sample
 
 ```bash title="release.sh"
-mkdocs build
+mkdocs build --strict
 zip -r release.zip site/
 ```
+
+## Styling rules
+
+- use one card frame for every language
+- keep the label short and obvious
+- let syntax colors do the language-specific work
+- avoid neon contrast unless the app is in a dark shell

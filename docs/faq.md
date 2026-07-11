@@ -2,7 +2,11 @@
 
 ### Is this production-ready?
 
-It is structured like a production starter, but you should still run `mkdocs build` in your own environment and verify the final content.
+It is structured like a production starter, but you should still run `mkdocs build --strict` in your own environment and verify the final content.
+
+### Is the shadcn style real shadcn/ui?
+
+It is a shadcn-inspired visual layer applied to MkDocs Material, not a React component library.
 
 ### Can I split CZ and EN into separate folders?
 

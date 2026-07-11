@@ -1,7 +1,7 @@
-# Minimalist documentation shell
+# Shadcn documentation shell
 
 :::info
-This release uses a compact, production-minded MkDocs stack with Material for MkDocs and a set of proven plugins.
+This release uses a compact, production-minded MkDocs stack with a shadcn-inspired visual layer on top of Material for MkDocs.
 :::
 
 <div class="lang-switch" data-lang-switch>
@@ -10,7 +10,7 @@ This release uses a compact, production-minded MkDocs stack with Material for Mk
 </div>
 
 <div data-lang="cs">
-Moderní dokumentační základ s výrazně čistším layoutem, lepší čitelností kódu, rychlejším načítáním a plynulejším pohybem po stránkách.
+Moderní dokumentační základ s čistším layoutem, lepší čitelností kódu, rychlejším načítáním a plynulejším pohybem po stránkách.
 </div>
 
 <div data-lang="en">
@@ -27,8 +27,8 @@ A modern documentation base with a cleaner layout, stronger code readability, fa
 
 <div class="feature-grid">
   <section class="feature-card">
-    <h3>Minimal layout</h3>
-    <p>Whitespace, soft borders, and one strong accent tone keep the interface calm.</p>
+    <h3>Shadcn-inspired layout</h3>
+    <p>Whitespace, soft borders, and restrained accents keep the interface calm and crisp.</p>
   </section>
   <section class="feature-card">
     <h3>Code focus</h3>
@@ -51,3 +51,7 @@ export function greet(name: string) {
   return `Hello, ${name}`
 }
 ```
+
+## Design system
+
+See the [token layer](design-system.md) for the visual rules behind the shadcn-inspired shell.

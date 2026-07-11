@@ -21,3 +21,4 @@ The core shell keeps only what the reader needs immediately. Everything else arr
 - use directory sections for logical grouping
 - keep code samples close to their explanation
 - put performance behavior into dedicated pages
+- keep tokens and spacing centralized in the CSS layer

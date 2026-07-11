@@ -28,3 +28,4 @@ html {
 - avoid heavy custom scroll physics
 - keep animations short and meaningful
 - never fight the browser on touch devices
+- offset anchor jumps when a sticky header is present

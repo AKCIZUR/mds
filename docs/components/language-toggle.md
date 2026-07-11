@@ -19,3 +19,4 @@ The toggle changes visible text across the page and remembers the last choice in
 - accessible via keyboard
 - stores language in localStorage
 - falls back to browser language on first load
+- updates instantly without a full page reload

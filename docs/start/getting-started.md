@@ -20,3 +20,4 @@ mkdocs serve
 - keep the docs small and readable
 - use reusable blocks for callouts and code
 - let the skeleton handle the first impression
+- shadcn styling lives in `docs/assets/custom.css`
