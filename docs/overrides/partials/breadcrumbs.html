@@ -1,0 +1,14 @@
+{% if page and page.url and page.ancestors %}
+<nav class="md-breadcrumbs" aria-label="Breadcrumb">
+  <ol class="md-breadcrumbs__list">
+    {% for ancestor in page.ancestors|reverse %}
+      <li class="md-breadcrumbs__item">
+        <a href="{{ ancestor.url | url }}">{{ ancestor.title }}</a>
+      </li>
+    {% endfor %}
+    <li class="md-breadcrumbs__item md-breadcrumbs__item--current" aria-current="page">
+      {{ page.title }}
+    </li>
+  </ol>
+</nav>
+{% endif %}

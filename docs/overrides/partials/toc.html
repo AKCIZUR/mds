@@ -1,0 +1,25 @@
+{% if page.toc %}
+<nav class="md-nav md-nav--secondary" aria-label="{{ lang.t('toc') }}">
+  <label class="md-nav__title" for="__toc">{{ lang.t('toc') }}</label>
+  <ul class="md-nav__list" data-md-component="toc">
+    {% for toc_item in page.toc %}
+      <li class="md-nav__item">
+        <a href="{{ toc_item.url | url }}" class="md-nav__link">
+          {{ toc_item.title }}
+        </a>
+        {% if toc_item.children %}
+          <ul class="md-nav__list">
+            {% for child in toc_item.children %}
+              <li class="md-nav__item">
+                <a href="{{ child.url | url }}" class="md-nav__link">
+                  {{ child.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}
