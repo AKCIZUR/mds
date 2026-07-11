@@ -1,0 +1,184 @@
+[
+  {
+    "title": "API dokumentace",
+    "summary": "<div data-openapi-src=\"../../assets/api/openapi.yaml\"></div>",
+    "href": "/cs/api/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Design update",
+    "summary": "Základ je postavený na dark-first vizuálu s výraznějšími code blocky a pohodlnější čitelností.",
+    "href": "/cs/blog/design-update/",
+    "tags": [
+      "design",
+      "update"
+    ]
+  },
+  {
+    "title": "Blog",
+    "summary": "Blog je připravený jako další obsahový kanál vedle dokumentace.",
+    "href": "/cs/blog/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Release launch",
+    "summary": "Napojit skutečný release proces na GitHub Actions a changelog.",
+    "href": "/cs/blog/release-launch/",
+    "tags": [
+      "release",
+      "launch"
+    ]
+  },
+  {
+    "title": "Funkce",
+    "summary": "Tato release verze je postavená tak, aby šla hned dál rozšiřovat bez přepisování architektury.",
+    "href": "/cs/features/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Rychlý start",
+    "summary": "pip install -r requirements.txt python scripts/generate_indexes.py mkdocs serve",
+    "href": "/cs/getting-started/",
+    "tags": [
+      "getting",
+      "started"
+    ]
+  },
+  {
+    "title": "VCCSD Docs Pro",
+    "summary": "Produkční dokumentace s vyhledáváním, verzemi, blogem, API referencí a dvěma jazyky.",
+    "href": "/cs/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Verze dokumentace",
+    "summary": "Verzování umožňuje držet starší dokumentaci odděleně od aktuálního vydání.",
+    "href": "/cs/versions/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "v1.0",
+    "summary": "Původní starter verze byla menší a sloužila jako výchozí základ.",
+    "href": "/cs/versions/v1.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "v2.0",
+    "summary": "Aktuální release obsahuje plný production setup a rozšířený vizuální základ.",
+    "href": "/cs/versions/v2.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "API documentation",
+    "summary": "<div data-openapi-src=\"../../assets/api/openapi.yaml\"></div>",
+    "href": "/en/api/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Design update",
+    "summary": "The base uses a dark-first visual system with stronger code blocks and cleaner readability.",
+    "href": "/en/blog/design-update/",
+    "tags": [
+      "design",
+      "update"
+    ]
+  },
+  {
+    "title": "Blog",
+    "summary": "Dokumentace",
+    "href": "/en/blog/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Release launch",
+    "summary": "Dokumentace",
+    "href": "/en/blog/release-launch/",
+    "tags": [
+      "release",
+      "launch"
+    ]
+  },
+  {
+    "title": "Features",
+    "summary": "Dokumentace",
+    "href": "/en/features/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Getting started",
+    "summary": "pip install -r requirements.txt python scripts/generate_indexes.py mkdocs serve",
+    "href": "/en/getting-started/",
+    "tags": [
+      "getting",
+      "started"
+    ]
+  },
+  {
+    "title": "VCCSD Docs Pro",
+    "summary": "Production documentation site with search, versions, blog, API reference and two languages.",
+    "href": "/en/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Release notes",
+    "summary": "This repository is prepared as a base for a real release flow:",
+    "href": "/en/notes/",
+    "tags": [
+      "notes"
+    ]
+  },
+  {
+    "title": "Documentation versions",
+    "summary": "Dokumentace",
+    "href": "/en/versions/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "v1.0",
+    "summary": "The original starter was smaller and served as the base layer.",
+    "href": "/en/versions/v1.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "v2.0",
+    "summary": "This release includes the full production setup and expanded visual base.",
+    "href": "/en/versions/v2.0/index/",
+    "tags": [
+      "index"
+    ]
+  },
+  {
+    "title": "Poznámky k release",
+    "summary": "Tento repozitář je připravený jako base pro skutečný release flow:",
+    "href": "/notes/",
+    "tags": [
+      "notes"
+    ]
+  }
+]

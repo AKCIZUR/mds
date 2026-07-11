@@ -1,5 +1,5 @@
-site_name: VCCSD Docs
-site_description: Produkční documentation starter pro GitHub Pages.
+site_name: VCCSD Docs Pro
+site_description: Production-ready docs starter with search, i18n, versioning and blog.
 site_url: https://USERNAME.github.io/REPO/
 repo_url: https://github.com/USERNAME/REPO
 repo_name: REPO
@@ -7,7 +7,30 @@ edit_uri: edit/main/docs/
 use_directory_urls: true
 
 theme:
-  name: shadcn
+  name: material
+  language: cs
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
+  palette:
+    - scheme: slate
+      primary: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
 
 markdown_extensions:
   - admonition
@@ -18,52 +41,51 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-      title: Obsah stránky
-  - pymdownx.blocks.caption
-  - pymdownx.blocks.details
-  - pymdownx.blocks.tab
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.details
+  - pymdownx.critic
 
 plugins:
   - search
 
+nav:
+  - Domů: cs/index.md
+  - Docs:
+      - Start: cs/getting-started.md
+      - Funkce: cs/features/index.md
+      - Blog: cs/blog/index.md
+      - API: cs/api/index.md
+      - Verze: versions/index.md
+  - EN:
+      - Home: en/index.md
+      - Start: en/getting-started.md
+      - Features: en/features/index.md
+      - Blog: en/blog/index.md
+      - API: en/api/index.md
+      - Versions: en/versions/index.md
+
+extra:
+  generator: false
+
 extra_css:
-  - assets/custom.css
+  - assets/css/custom.css
 
 extra_javascript:
-  - assets/app.js
-
-nav:
-  - Domů: index.md
-  - Start:
-      - Rychlý start: getting-started.md
-      - Struktura projektu: architecture.md
-  - Menu a layout:
-      - Navigace: navigation.md
-      - Komponenty: components.md
-  - Reference:
-      - Přehled: reference.md
-      - FAQ: faq.md
-      - Release notes: releases.md
-      - Changelog: changelog.md
-  - English:
-      - Home: en/index.md
-      - Getting started: en/getting-started.md
-      - Project structure: en/architecture.md
-      - Navigation: en/navigation.md
-      - Components: en/components.md
-      - Reference: en/reference.md
-      - FAQ: en/faq.md
-      - Release notes: en/releases.md
-      - Changelog: en/changelog.md
+  - assets/js/site-meta.js
+  - assets/js/app.js
+  - assets/js/openapi.js
+  - assets/js/mermaid-lite.js

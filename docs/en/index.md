@@ -1,34 +1,23 @@
-# VCCSD Docs
+# VCCSD Docs Pro
 
-A modern documentation starter with a refined dark glass look, language-aware code blocks, a CZ/EN structure, and smoother scrolling.
+Production documentation site with search, versions, blog, API reference and two languages.
 
-## What is ready
+## Ready out of the box
 
-- clear navigation on the left
-- softer dark theme with more depth
-- minimal code blocks with language accents
-- page skeleton on load
-- lazy loading for images and embeds
-- CZ/EN switching with matching structure
+- full-text search
+- CZ / EN structure
+- automatic menu
+- GitHub edit links
+- command palette `Ctrl+K`
+- lazy loading
+- skeleton loading
+- blog
+- versioned docs
+- Mermaid
+- OpenAPI
 
-## Design direction
+## Quick entry
 
-!!! note
-    The goal is a clean, product-like experience with strong hierarchy and excellent readability.
-
-## Example
-
-```ts
-const theme = {
-  mode: 'dark',
-  accent: 'cyan',
-  motion: 'soft',
-}
+```bash
+mkdocs serve
 ```
-
-## Next steps
-
-- add your brand
-- expand sections for your product
-- prepare real API reference
-- keep content short and precise
